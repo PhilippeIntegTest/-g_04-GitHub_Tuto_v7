@@ -26,12 +26,12 @@ Partial Class Form_Tuto_v7
 		Me.Label1 = New System.Windows.Forms.Label()
 		Me.TabControl1 = New System.Windows.Forms.TabControl()
 		Me.TabPage1 = New System.Windows.Forms.TabPage()
+		Me.U5_Share_Global_Structure_Test1 = New GitHub_Tuto_v7.U5_Share_Global_Structure_Test()
 		Me.U_Memo_Txt_Mirror1 = New Common_All_2013_a.U_Memo_Txt_Mirror()
 		Me.TabPage2 = New System.Windows.Forms.TabPage()
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.TabPage3 = New System.Windows.Forms.TabPage()
 		Me.U5_GitHub_Tuto_v71 = New GitHub_Tuto_v7.U5_GitHub_Tuto_v8()
-		Me.U5_Share_Global_Structure_Test1 = New GitHub_Tuto_v7.U5_Share_Global_Structure_Test()
 		U_Memo_Check1 = New Common_All_2013_a.U_Memo_Check()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
@@ -97,6 +97,15 @@ Partial Class Form_Tuto_v7
 		Me.TabPage1.TabIndex = 0
 		Me.TabPage1.Text = "Main Page"
 		'
+		'U5_Share_Global_Structure_Test1
+		'
+		Me.U5_Share_Global_Structure_Test1.BackColor = System.Drawing.Color.LavenderBlush
+		Me.U5_Share_Global_Structure_Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.U5_Share_Global_Structure_Test1.Location = New System.Drawing.Point(3, 47)
+		Me.U5_Share_Global_Structure_Test1.Name = "U5_Share_Global_Structure_Test1"
+		Me.U5_Share_Global_Structure_Test1.Size = New System.Drawing.Size(847, 511)
+		Me.U5_Share_Global_Structure_Test1.TabIndex = 3
+		'
 		'U_Memo_Txt_Mirror1
 		'
 		Me.U_Memo_Txt_Mirror1.A_Memo_Text_First_Init = "First_Init_String"
@@ -125,7 +134,7 @@ Partial Class Form_Tuto_v7
 		Me.TabPage2.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage2.Name = "TabPage2"
 		Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-		Me.TabPage2.Size = New System.Drawing.Size(651, 275)
+		Me.TabPage2.Size = New System.Drawing.Size(950, 582)
 		Me.TabPage2.TabIndex = 1
 		Me.TabPage2.Text = "Version Tree (GitHub)"
 		'
@@ -148,7 +157,7 @@ Partial Class Form_Tuto_v7
 		Me.TabPage3.Controls.Add(Me.U5_GitHub_Tuto_v71)
 		Me.TabPage3.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage3.Name = "TabPage3"
-		Me.TabPage3.Size = New System.Drawing.Size(651, 275)
+		Me.TabPage3.Size = New System.Drawing.Size(950, 582)
 		Me.TabPage3.TabIndex = 2
 		Me.TabPage3.Text = "VersionTree (UserControl)"
 		'
@@ -160,15 +169,6 @@ Partial Class Form_Tuto_v7
 		Me.U5_GitHub_Tuto_v71.Name = "U5_GitHub_Tuto_v71"
 		Me.U5_GitHub_Tuto_v71.Size = New System.Drawing.Size(550, 147)
 		Me.U5_GitHub_Tuto_v71.TabIndex = 0
-		'
-		'U5_Share_Global_Structure_Test1
-		'
-		Me.U5_Share_Global_Structure_Test1.BackColor = System.Drawing.Color.LavenderBlush
-		Me.U5_Share_Global_Structure_Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.U5_Share_Global_Structure_Test1.Location = New System.Drawing.Point(3, 47)
-		Me.U5_Share_Global_Structure_Test1.Name = "U5_Share_Global_Structure_Test1"
-		Me.U5_Share_Global_Structure_Test1.Size = New System.Drawing.Size(847, 511)
-		Me.U5_Share_Global_Structure_Test1.TabIndex = 3
 		'
 		'Form_Tuto_v7
 		'

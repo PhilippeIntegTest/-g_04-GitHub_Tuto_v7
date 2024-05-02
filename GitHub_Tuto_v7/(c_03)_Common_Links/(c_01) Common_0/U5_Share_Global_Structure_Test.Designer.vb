@@ -26,11 +26,15 @@ Partial Class U5_Share_Global_Structure_Test
 		Me.Label1 = New System.Windows.Forms.Label()
 		Me.TabControl1 = New System.Windows.Forms.TabControl()
 		Me.TabPage1 = New System.Windows.Forms.TabPage()
-		Me.TabPage2 = New System.Windows.Forms.TabPage()
-		Me.U_Node_Search_Object_By_Name1 = New Common_All_2013_a.U_Node_Search_Object_By_Name()
 		Me.Label4 = New System.Windows.Forms.Label()
+		Me.U_Node_Search_Object_By_Name1 = New Common_All_2013_a.U_Node_Search_Object_By_Name()
+		Me.TabPage2 = New System.Windows.Forms.TabPage()
+		Me.Button1 = New System.Windows.Forms.Button()
+		Me.Label2 = New System.Windows.Forms.Label()
+		Me.Label3 = New System.Windows.Forms.Label()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
+		Me.TabPage2.SuspendLayout()
 		Me.SuspendLayout()
 		'
 		'Label1
@@ -69,26 +73,6 @@ Partial Class U5_Share_Global_Structure_Test
 		Me.TabPage1.TabIndex = 0
 		Me.TabPage1.Text = "Share Struct - Use Search"
 		'
-		'TabPage2
-		'
-		Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-		Me.TabPage2.Name = "TabPage2"
-		Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-		Me.TabPage2.Size = New System.Drawing.Size(823, 456)
-		Me.TabPage2.TabIndex = 1
-		Me.TabPage2.Text = "Exchange Pointer on Object"
-		Me.TabPage2.UseVisualStyleBackColor = True
-		'
-		'U_Node_Search_Object_By_Name1
-		'
-		Me.U_Node_Search_Object_By_Name1.a_Object_LogEvent_Prop = Nothing
-		Me.U_Node_Search_Object_By_Name1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-		Me.U_Node_Search_Object_By_Name1.Location = New System.Drawing.Point(5, 45)
-		Me.U_Node_Search_Object_By_Name1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-		Me.U_Node_Search_Object_By_Name1.Name = "U_Node_Search_Object_By_Name1"
-		Me.U_Node_Search_Object_By_Name1.Size = New System.Drawing.Size(718, 406)
-		Me.U_Node_Search_Object_By_Name1.TabIndex = 5
-		'
 		'Label4
 		'
 		Me.Label4.BackColor = System.Drawing.Color.Chartreuse
@@ -103,6 +87,56 @@ Partial Class U5_Share_Global_Structure_Test
 		Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		Me.Label4.UseCompatibleTextRendering = True
 		'
+		'U_Node_Search_Object_By_Name1
+		'
+		Me.U_Node_Search_Object_By_Name1.a_Object_LogEvent_Prop = Nothing
+		Me.U_Node_Search_Object_By_Name1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.U_Node_Search_Object_By_Name1.Location = New System.Drawing.Point(5, 45)
+		Me.U_Node_Search_Object_By_Name1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+		Me.U_Node_Search_Object_By_Name1.Name = "U_Node_Search_Object_By_Name1"
+		Me.U_Node_Search_Object_By_Name1.Size = New System.Drawing.Size(718, 406)
+		Me.U_Node_Search_Object_By_Name1.TabIndex = 5
+		'
+		'TabPage2
+		'
+		Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.TabPage2.Controls.Add(Me.Label3)
+		Me.TabPage2.Controls.Add(Me.Label2)
+		Me.TabPage2.Controls.Add(Me.Button1)
+		Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+		Me.TabPage2.Name = "TabPage2"
+		Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+		Me.TabPage2.Size = New System.Drawing.Size(823, 456)
+		Me.TabPage2.TabIndex = 1
+		Me.TabPage2.Text = "Exchange Pointer on Object"
+		'
+		'Button1
+		'
+		Me.Button1.Location = New System.Drawing.Point(57, 39)
+		Me.Button1.Name = "Button1"
+		Me.Button1.Size = New System.Drawing.Size(235, 23)
+		Me.Button1.TabIndex = 0
+		Me.Button1.Text = "Accès structure globale"
+		Me.Button1.UseVisualStyleBackColor = True
+		'
+		'Label2
+		'
+		Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+		Me.Label2.Location = New System.Drawing.Point(54, 93)
+		Me.Label2.Name = "Label2"
+		Me.Label2.Size = New System.Drawing.Size(119, 17)
+		Me.Label2.TabIndex = 1
+		Me.Label2.Text = "Nom Premier State="
+		'
+		'Label3
+		'
+		Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+		Me.Label3.Location = New System.Drawing.Point(179, 92)
+		Me.Label3.Name = "Label3"
+		Me.Label3.Size = New System.Drawing.Size(119, 18)
+		Me.Label3.TabIndex = 2
+		Me.Label3.Text = " (Valeur)"
+		'
 		'U5_Share_Global_Structure_Test
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -115,6 +149,7 @@ Partial Class U5_Share_Global_Structure_Test
 		Me.Size = New System.Drawing.Size(847, 511)
 		Me.TabControl1.ResumeLayout(False)
 		Me.TabPage1.ResumeLayout(False)
+		Me.TabPage2.ResumeLayout(False)
 		Me.ResumeLayout(False)
 
 	End Sub
@@ -125,4 +160,7 @@ Partial Class U5_Share_Global_Structure_Test
 	Friend WithEvents U_Node_Search_Object_By_Name1 As Common_All_2013_a.U_Node_Search_Object_By_Name
 	Friend WithEvents TabPage2 As TabPage
 	Friend WithEvents Label4 As Label
+	Friend WithEvents Button1 As Button
+	Friend WithEvents Label2 As Label
+	Friend WithEvents Label3 As Label
 End Class
