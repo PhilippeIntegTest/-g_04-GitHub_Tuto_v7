@@ -1,0 +1,9 @@
+diff a/GitHub_Tuto_v7/U5_GitHub_Tuto_v7.Designer.vb b/GitHub_Tuto_v7/U5_GitHub_Tuto_v7.Designer.vb	(rejected hunks)
+@@ -25,6 +25,7 @@
+ 		Me.Label1 = New System.Windows.Forms.Label()
+ 		Me.Label2 = New System.Windows.Forms.Label()
+ 		Me.Label3 = New System.Windows.Forms.Label()
++		Me.Label4 = New System.Windows.Forms.Label()
+ 		Me.SuspendLayout()
+ 		'
+ 		'Label1

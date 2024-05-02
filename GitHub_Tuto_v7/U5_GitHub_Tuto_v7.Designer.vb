@@ -26,6 +26,7 @@ Partial Class U5_GitHub_Tuto_v7
 		Me.Label2 = New System.Windows.Forms.Label()
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.Label5 = New System.Windows.Forms.Label()
+		Me.Label4 = New System.Windows.Forms.Label()
 		Me.SuspendLayout()
 		'
 		'Label1
@@ -84,12 +85,26 @@ Partial Class U5_GitHub_Tuto_v7
 		Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		Me.Label5.UseCompatibleTextRendering = True
 		'
+		'Label4
+		'
+		Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+		Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label4.ForeColor = System.Drawing.Color.DarkViolet
+		Me.Label4.Location = New System.Drawing.Point(138, 81)
+		Me.Label4.Name = "Label4"
+		Me.Label4.Size = New System.Drawing.Size(329, 20)
+		Me.Label4.TabIndex = 5
+		Me.Label4.Text = "Note: ICI on ne PEUT PAS Merger la branche Jaune !!!"
+		Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
 		'U5_GitHub_Tuto_v7
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
 		Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Controls.Add(Me.Label4)
 		Me.Controls.Add(Me.Label5)
 		Me.Controls.Add(Me.Label3)
 		Me.Controls.Add(Me.Label2)
@@ -104,4 +119,5 @@ Partial Class U5_GitHub_Tuto_v7
 	Friend WithEvents Label2 As Label
 	Friend WithEvents Label3 As Label
 	Friend WithEvents Label5 As Label
+	Friend WithEvents Label4 As Label
 End Class
