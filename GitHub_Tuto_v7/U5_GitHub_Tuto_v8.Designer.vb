@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class U5_GitHub_Tuto_v7
+Partial Class U5_GitHub_Tuto_v8
 	Inherits System.Windows.Forms.UserControl
 
 	'UserControl overrides dispose to clean up the component list.
@@ -27,6 +27,7 @@ Partial Class U5_GitHub_Tuto_v7
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.Label4 = New System.Windows.Forms.Label()
 		Me.Label5 = New System.Windows.Forms.Label()
+		Me.Label6 = New System.Windows.Forms.Label()
 		Me.SuspendLayout()
 		'
 		'Label1
@@ -99,18 +100,33 @@ Partial Class U5_GitHub_Tuto_v7
 		Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		Me.Label5.UseCompatibleTextRendering = True
 		'
-		'U5_GitHub_Tuto_v7
+		'Label6
+		'
+		Me.Label6.BackColor = System.Drawing.Color.Lime
+		Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+		Me.Label6.Location = New System.Drawing.Point(45, 118)
+		Me.Label6.Name = "Label6"
+		Me.Label6.Size = New System.Drawing.Size(412, 16)
+		Me.Label6.TabIndex = 6
+		Me.Label6.Text = "Git: Branch Feature -->  Add Shared Structure example"
+		Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Label6.UseCompatibleTextRendering = True
+		'
+		'U5_GitHub_Tuto_v8
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
 		Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Controls.Add(Me.Label6)
 		Me.Controls.Add(Me.Label5)
 		Me.Controls.Add(Me.Label4)
 		Me.Controls.Add(Me.Label3)
 		Me.Controls.Add(Me.Label2)
 		Me.Controls.Add(Me.Label1)
-		Me.Name = "U5_GitHub_Tuto_v7"
+		Me.Name = "U5_GitHub_Tuto_v8"
 		Me.Size = New System.Drawing.Size(502, 148)
 		Me.ResumeLayout(False)
 
@@ -121,4 +137,5 @@ Partial Class U5_GitHub_Tuto_v7
 	Friend WithEvents Label3 As Label
 	Friend WithEvents Label4 As Label
 	Friend WithEvents Label5 As Label
+	Friend WithEvents Label6 As Label
 End Class

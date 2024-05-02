@@ -76,11 +76,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="%28f_03%29 Form_Tuto_v7.vb">
+    <Compile Include="%28f_03%29 Form_Tuto_v8.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="%28f_03%29 Form_Tuto_v7.Designer.vb">
-      <DependentUpon>%28f_03%29 Form_Tuto_v7.vb</DependentUpon>
+    <Compile Include="%28f_03%29 Form_Tuto_v8.Designer.vb">
+      <DependentUpon>%28f_03%29 Form_Tuto_v8.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -98,16 +98,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="U5_GitHub_Tuto_v7.Designer.vb">
-      <DependentUpon>U5_GitHub_Tuto_v7.vb</DependentUpon>
+    <Compile Include="U5_GitHub_Tuto_v8.Designer.vb">
+      <DependentUpon>U5_GitHub_Tuto_v8.vb</DependentUpon>
     </Compile>
-    <Compile Include="U5_GitHub_Tuto_v7.vb">
+    <Compile Include="U5_GitHub_Tuto_v8.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="%28c_03%29_Common_Links\%28c_01%29 Common_0\U5_Share_Global_Structure_Test.Designer.vb">
+      <DependentUpon>U5_Share_Global_Structure_Test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="%28c_03%29_Common_Links\%28c_01%29 Common_0\U5_Share_Global_Structure_Test.vb">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="%28f_03%29 Form_Tuto_v7.resx">
-      <DependentUpon>%28f_03%29 Form_Tuto_v7.vb</DependentUpon>
+    <EmbeddedResource Include="%28c_03%29_Common_Links\%28c_01%29 Common_0\U5_Share_Global_Structure_Test.resx">
+      <DependentUpon>U5_Share_Global_Structure_Test.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%28f_03%29 Form_Tuto_v8.resx">
+      <DependentUpon>%28f_03%29 Form_Tuto_v8.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -115,8 +124,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="U5_GitHub_Tuto_v7.resx">
-      <DependentUpon>U5_GitHub_Tuto_v7.vb</DependentUpon>
+    <EmbeddedResource Include="U5_GitHub_Tuto_v8.resx">
+      <DependentUpon>U5_GitHub_Tuto_v8.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

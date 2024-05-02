@@ -30,7 +30,8 @@ Partial Class Form_Tuto_v7
 		Me.TabPage2 = New System.Windows.Forms.TabPage()
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.TabPage3 = New System.Windows.Forms.TabPage()
-		Me.U5_GitHub_Tuto_v71 = New GitHub_Tuto_v7.U5_GitHub_Tuto_v7()
+		Me.U5_GitHub_Tuto_v71 = New GitHub_Tuto_v7.U5_GitHub_Tuto_v8()
+		Me.U5_Share_Global_Structure_Test1 = New GitHub_Tuto_v7.U5_Share_Global_Structure_Test()
 		U_Memo_Check1 = New Common_All_2013_a.U_Memo_Check()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
@@ -50,7 +51,7 @@ Partial Class Form_Tuto_v7
 		U_Memo_Check1.Design_Me_Name = "(Design) Chaine Me.Name = U_Memo_Check"
 		U_Memo_Check1.Design_Parent_Name = "(Design) Parent.Name = TabPage1"
 		U_Memo_Check1.ForeColor = System.Drawing.Color.Coral
-		U_Memo_Check1.Location = New System.Drawing.Point(18, 40)
+		U_Memo_Check1.Location = New System.Drawing.Point(6, 6)
 		U_Memo_Check1.Name = "U_Memo_Check1"
 		U_Memo_Check1.Parent_Name = Nothing
 		U_Memo_Check1.Parent_Parent_Name = Nothing
@@ -80,18 +81,19 @@ Partial Class Form_Tuto_v7
 		Me.TabControl1.Location = New System.Drawing.Point(2, 38)
 		Me.TabControl1.Name = "TabControl1"
 		Me.TabControl1.SelectedIndex = 0
-		Me.TabControl1.Size = New System.Drawing.Size(659, 304)
+		Me.TabControl1.Size = New System.Drawing.Size(958, 611)
 		Me.TabControl1.TabIndex = 1
 		'
 		'TabPage1
 		'
 		Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.TabPage1.Controls.Add(Me.U5_Share_Global_Structure_Test1)
 		Me.TabPage1.Controls.Add(U_Memo_Check1)
 		Me.TabPage1.Controls.Add(Me.U_Memo_Txt_Mirror1)
 		Me.TabPage1.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage1.Name = "TabPage1"
 		Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-		Me.TabPage1.Size = New System.Drawing.Size(651, 275)
+		Me.TabPage1.Size = New System.Drawing.Size(950, 582)
 		Me.TabPage1.TabIndex = 0
 		Me.TabPage1.Text = "Main Page"
 		'
@@ -100,7 +102,7 @@ Partial Class Form_Tuto_v7
 		Me.U_Memo_Txt_Mirror1.A_Memo_Text_First_Init = "First_Init_String"
 		Me.U_Memo_Txt_Mirror1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
 		Me.U_Memo_Txt_Mirror1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.U_Memo_Txt_Mirror1.Location = New System.Drawing.Point(18, 62)
+		Me.U_Memo_Txt_Mirror1.Location = New System.Drawing.Point(6, 28)
 		Me.U_Memo_Txt_Mirror1.Margin = New System.Windows.Forms.Padding(0)
 		Me.U_Memo_Txt_Mirror1.Memo1_Text = "Texte Mémorisé"
 		Me.U_Memo_Txt_Mirror1.Mirrored_Control = Nothing
@@ -159,12 +161,21 @@ Partial Class Form_Tuto_v7
 		Me.U5_GitHub_Tuto_v71.Size = New System.Drawing.Size(550, 147)
 		Me.U5_GitHub_Tuto_v71.TabIndex = 0
 		'
+		'U5_Share_Global_Structure_Test1
+		'
+		Me.U5_Share_Global_Structure_Test1.BackColor = System.Drawing.Color.LavenderBlush
+		Me.U5_Share_Global_Structure_Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.U5_Share_Global_Structure_Test1.Location = New System.Drawing.Point(3, 47)
+		Me.U5_Share_Global_Structure_Test1.Name = "U5_Share_Global_Structure_Test1"
+		Me.U5_Share_Global_Structure_Test1.Size = New System.Drawing.Size(847, 511)
+		Me.U5_Share_Global_Structure_Test1.TabIndex = 3
+		'
 		'Form_Tuto_v7
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-		Me.ClientSize = New System.Drawing.Size(665, 354)
+		Me.ClientSize = New System.Drawing.Size(1050, 661)
 		Me.Controls.Add(Me.TabControl1)
 		Me.Controls.Add(Me.Label1)
 		Me.Name = "Form_Tuto_v7"
@@ -183,6 +194,7 @@ Partial Class Form_Tuto_v7
 	Friend WithEvents TabPage2 As TabPage
 	Friend WithEvents Label3 As Label
 	Friend WithEvents TabPage3 As TabPage
-	Friend WithEvents U5_GitHub_Tuto_v71 As U5_GitHub_Tuto_v7
+	Friend WithEvents U5_GitHub_Tuto_v71 As U5_GitHub_Tuto_v8
 	Friend WithEvents U_Memo_Txt_Mirror1 As Common_All_2013_a.U_Memo_Txt_Mirror
+	Friend WithEvents U5_Share_Global_Structure_Test1 As U5_Share_Global_Structure_Test
 End Class
