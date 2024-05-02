@@ -156,7 +156,7 @@ Partial Class Form_Tuto_v7
 		Me.U5_GitHub_Tuto_v71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 		Me.U5_GitHub_Tuto_v71.Location = New System.Drawing.Point(16, 3)
 		Me.U5_GitHub_Tuto_v71.Name = "U5_GitHub_Tuto_v71"
-		Me.U5_GitHub_Tuto_v71.Size = New System.Drawing.Size(550, 147)
+		Me.U5_GitHub_Tuto_v71.Size = New System.Drawing.Size(550, 190)
 		Me.U5_GitHub_Tuto_v71.TabIndex = 0
 		'
 		'Form_Tuto_v7
