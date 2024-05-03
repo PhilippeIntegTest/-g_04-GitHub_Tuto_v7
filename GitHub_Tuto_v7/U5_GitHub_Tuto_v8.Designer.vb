@@ -106,7 +106,7 @@ Partial Class U5_GitHub_Tuto_v8
 		Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 		Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-		Me.Label6.Location = New System.Drawing.Point(45, 118)
+		Me.Label6.Location = New System.Drawing.Point(45, 133)
 		Me.Label6.Name = "Label6"
 		Me.Label6.Size = New System.Drawing.Size(412, 16)
 		Me.Label6.TabIndex = 6
@@ -127,7 +127,7 @@ Partial Class U5_GitHub_Tuto_v8
 		Me.Controls.Add(Me.Label2)
 		Me.Controls.Add(Me.Label1)
 		Me.Name = "U5_GitHub_Tuto_v8"
-		Me.Size = New System.Drawing.Size(502, 148)
+		Me.Size = New System.Drawing.Size(502, 202)
 		Me.ResumeLayout(False)
 
 	End Sub
