@@ -87,7 +87,7 @@ Partial Class U5_GitHub_Tuto_v7
 		'
 		'Label5
 		'
-		Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.Label5.BackColor = System.Drawing.Color.Aqua
 		Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 		Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label5.ForeColor = System.Drawing.Color.Maroon
