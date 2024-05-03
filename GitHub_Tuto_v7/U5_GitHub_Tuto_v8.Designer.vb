@@ -102,7 +102,7 @@ Partial Class U5_GitHub_Tuto_v8
 		'
 		'Label6
 		'
-		Me.Label6.BackColor = System.Drawing.Color.Lime
+		Me.Label6.BackColor = System.Drawing.Color.Pink
 		Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 		Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
