@@ -28,6 +28,7 @@ Partial Class U5_GitHub_Tuto_v8
 		Me.Label4 = New System.Windows.Forms.Label()
 		Me.Label5 = New System.Windows.Forms.Label()
 		Me.Label6 = New System.Windows.Forms.Label()
+		Me.Label7 = New System.Windows.Forms.Label()
 		Me.SuspendLayout()
 		'
 		'Label1
@@ -78,7 +79,7 @@ Partial Class U5_GitHub_Tuto_v8
 		Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 		Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label4.ForeColor = System.Drawing.Color.Maroon
-		Me.Label4.Location = New System.Drawing.Point(45, 72)
+		Me.Label4.Location = New System.Drawing.Point(45, 75)
 		Me.Label4.Name = "Label4"
 		Me.Label4.Size = New System.Drawing.Size(412, 16)
 		Me.Label4.TabIndex = 4
@@ -92,7 +93,7 @@ Partial Class U5_GitHub_Tuto_v8
 		Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 		Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label5.ForeColor = System.Drawing.Color.Maroon
-		Me.Label5.Location = New System.Drawing.Point(45, 93)
+		Me.Label5.Location = New System.Drawing.Point(45, 99)
 		Me.Label5.Name = "Label5"
 		Me.Label5.Size = New System.Drawing.Size(412, 16)
 		Me.Label5.TabIndex = 5
@@ -106,13 +107,27 @@ Partial Class U5_GitHub_Tuto_v8
 		Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 		Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-		Me.Label6.Location = New System.Drawing.Point(45, 176)
+		Me.Label6.Location = New System.Drawing.Point(45, 123)
 		Me.Label6.Name = "Label6"
 		Me.Label6.Size = New System.Drawing.Size(412, 16)
 		Me.Label6.TabIndex = 6
 		Me.Label6.Text = "Git: Branch Feature -->  Add Shared Structure example"
 		Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		Me.Label6.UseCompatibleTextRendering = True
+		'
+		'Label7
+		'
+		Me.Label7.BackColor = System.Drawing.Color.Lime
+		Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label7.ForeColor = System.Drawing.Color.Maroon
+		Me.Label7.Location = New System.Drawing.Point(45, 147)
+		Me.Label7.Name = "Label7"
+		Me.Label7.Size = New System.Drawing.Size(412, 16)
+		Me.Label7.TabIndex = 7
+		Me.Label7.Text = "Git: (Sa 4 mai 2024) Branch_V9 Add U5_PlantUML  "
+		Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Label7.UseCompatibleTextRendering = True
 		'
 		'U5_GitHub_Tuto_v8
 		'
@@ -121,6 +136,7 @@ Partial Class U5_GitHub_Tuto_v8
 		Me.AutoScroll = True
 		Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
 		Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Controls.Add(Me.Label7)
 		Me.Controls.Add(Me.Label6)
 		Me.Controls.Add(Me.Label5)
 		Me.Controls.Add(Me.Label4)
@@ -128,7 +144,7 @@ Partial Class U5_GitHub_Tuto_v8
 		Me.Controls.Add(Me.Label2)
 		Me.Controls.Add(Me.Label1)
 		Me.Name = "U5_GitHub_Tuto_v8"
-		Me.Size = New System.Drawing.Size(496, 206)
+		Me.Size = New System.Drawing.Size(496, 295)
 		Me.ResumeLayout(False)
 
 	End Sub
@@ -139,4 +155,5 @@ Partial Class U5_GitHub_Tuto_v8
 	Friend WithEvents Label4 As Label
 	Friend WithEvents Label5 As Label
 	Friend WithEvents Label6 As Label
+	Friend WithEvents Label7 As Label
 End Class

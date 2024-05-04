@@ -110,6 +110,12 @@
     <Compile Include="%28c_03%29_Common_Links\%28c_01%29 Common_0\U5_Share_Global_Structure_Test.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="U5_PlantUML_MindMap_v1.Designer.vb">
+      <DependentUpon>U5_PlantUML_MindMap_v1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="U5_PlantUML_MindMap_v1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="%28c_03%29_Common_Links\%28c_01%29 Common_0\U5_Share_Global_Structure_Test.resx">
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="U5_GitHub_Tuto_v8.resx">
       <DependentUpon>U5_GitHub_Tuto_v8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="U5_PlantUML_MindMap_v1.resx">
+      <DependentUpon>U5_PlantUML_MindMap_v1.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
