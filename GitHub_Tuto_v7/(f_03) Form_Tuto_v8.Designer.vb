@@ -85,7 +85,7 @@ Partial Class Form_Tuto_v7
 		Me.TabControl1.Location = New System.Drawing.Point(2, 38)
 		Me.TabControl1.Name = "TabControl1"
 		Me.TabControl1.SelectedIndex = 0
-		Me.TabControl1.Size = New System.Drawing.Size(1134, 611)
+		Me.TabControl1.Size = New System.Drawing.Size(1134, 842)
 		Me.TabControl1.TabIndex = 1
 		'
 		'TabPage1
@@ -97,7 +97,7 @@ Partial Class Form_Tuto_v7
 		Me.TabPage1.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage1.Name = "TabPage1"
 		Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-		Me.TabPage1.Size = New System.Drawing.Size(950, 582)
+		Me.TabPage1.Size = New System.Drawing.Size(1126, 582)
 		Me.TabPage1.TabIndex = 0
 		Me.TabPage1.Text = "Main Page"
 		'
@@ -138,7 +138,7 @@ Partial Class Form_Tuto_v7
 		Me.TabPage2.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage2.Name = "TabPage2"
 		Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-		Me.TabPage2.Size = New System.Drawing.Size(950, 582)
+		Me.TabPage2.Size = New System.Drawing.Size(1126, 582)
 		Me.TabPage2.TabIndex = 1
 		Me.TabPage2.Text = "Version Tree (GitHub)"
 		'
@@ -161,7 +161,7 @@ Partial Class Form_Tuto_v7
 		Me.TabPage3.Controls.Add(Me.U5_GitHub_Tuto_v71)
 		Me.TabPage3.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage3.Name = "TabPage3"
-		Me.TabPage3.Size = New System.Drawing.Size(950, 582)
+		Me.TabPage3.Size = New System.Drawing.Size(1126, 813)
 		Me.TabPage3.TabIndex = 2
 		Me.TabPage3.Text = "VersionTree (UserControl)"
 		'
@@ -180,7 +180,7 @@ Partial Class Form_Tuto_v7
 		Me.TabPage4.Controls.Add(Me.U5_PlantUML_MindMap_v11)
 		Me.TabPage4.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage4.Name = "TabPage4"
-		Me.TabPage4.Size = New System.Drawing.Size(1126, 582)
+		Me.TabPage4.Size = New System.Drawing.Size(1126, 813)
 		Me.TabPage4.TabIndex = 3
 		Me.TabPage4.Text = "U5 PlantUML"
 		Me.TabPage4.UseVisualStyleBackColor = True
@@ -192,7 +192,7 @@ Partial Class Form_Tuto_v7
 		Me.U5_PlantUML_MindMap_v11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 		Me.U5_PlantUML_MindMap_v11.Location = New System.Drawing.Point(7, 4)
 		Me.U5_PlantUML_MindMap_v11.Name = "U5_PlantUML_MindMap_v11"
-		Me.U5_PlantUML_MindMap_v11.Size = New System.Drawing.Size(1099, 532)
+		Me.U5_PlantUML_MindMap_v11.Size = New System.Drawing.Size(1099, 793)
 		Me.U5_PlantUML_MindMap_v11.TabIndex = 0
 		'
 		'Form_Tuto_v7
@@ -200,7 +200,7 @@ Partial Class Form_Tuto_v7
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-		Me.ClientSize = New System.Drawing.Size(1148, 661)
+		Me.ClientSize = New System.Drawing.Size(1154, 913)
 		Me.Controls.Add(Me.TabControl1)
 		Me.Controls.Add(Me.Label1)
 		Me.Name = "Form_Tuto_v7"

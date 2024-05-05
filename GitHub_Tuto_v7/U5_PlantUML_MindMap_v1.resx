@@ -126,4 +126,22 @@ NOTE: PlantUML crée les relations dans l'ordre d'apparition
  et pas suivant les OBJETS !
 </value>
   </data>
+  <data name="Label7.Text" xml:space="preserve">
+    <value>    Stockage et extraction de PlantUML (Si pas présent !)
+
+--&gt; Utilisation de la DLL 7Zip.
+
+
+
+You need to call SevenZipBase.SetLibraryPath with the path to 7z.dll,
+ and make sure that you are using the correct version for your application (32- or 64-bit). e.g.
+
+Trouvé sur: https://stackoverflow.com/questions/39390490/extract-file-using-sevenzip 
+
+SevenZipBase.SetLibraryPath("C:\Dev\7z.dll")
+Dim Extractor As New SevenZipExtractor(tbExtractFile.Text)
+Extractor.ExtractArchive(tbExtractPath.Text)
+
+</value>
+  </data>
 </root>
