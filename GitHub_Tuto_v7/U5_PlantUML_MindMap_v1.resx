@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label_Create_Auto_States_For_PlantUML.Text" xml:space="preserve">
+    <value>    Création de State Machines:
+--&gt; Il faudrait déclarer d'abord tous les STATES.
+      ¤ Puis les transitions, dans l'ordre.
+
+NOTE: PlantUML crée les relations dans l'ordre d'apparition            
+ et pas suivant les OBJETS !
+</value>
+  </data>
 </root>
