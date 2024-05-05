@@ -31,6 +31,7 @@ Partial Class Form_Tuto_v7
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.TabPage3 = New System.Windows.Forms.TabPage()
 		Me.U5_GitHub_Tuto_v71 = New GitHub_Tuto_v7.U5_GitHub_Tuto_v7()
+		Me.Label2 = New System.Windows.Forms.Label()
 		U_Memo_Check1 = New Common_All_2013_a.U_Memo_Check()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
@@ -86,6 +87,7 @@ Partial Class Form_Tuto_v7
 		'TabPage1
 		'
 		Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.TabPage1.Controls.Add(Me.Label2)
 		Me.TabPage1.Controls.Add(U_Memo_Check1)
 		Me.TabPage1.Controls.Add(Me.U_Memo_Txt_Mirror1)
 		Me.TabPage1.Location = New System.Drawing.Point(4, 25)
@@ -100,7 +102,7 @@ Partial Class Form_Tuto_v7
 		Me.U_Memo_Txt_Mirror1.A_Memo_Text_First_Init = "First_Init_String"
 		Me.U_Memo_Txt_Mirror1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
 		Me.U_Memo_Txt_Mirror1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.U_Memo_Txt_Mirror1.Location = New System.Drawing.Point(18, 62)
+		Me.U_Memo_Txt_Mirror1.Location = New System.Drawing.Point(18, 72)
 		Me.U_Memo_Txt_Mirror1.Margin = New System.Windows.Forms.Padding(0)
 		Me.U_Memo_Txt_Mirror1.Memo1_Text = "Texte Mémorisé"
 		Me.U_Memo_Txt_Mirror1.Mirrored_Control = Nothing
@@ -159,6 +161,20 @@ Partial Class Form_Tuto_v7
 		Me.U5_GitHub_Tuto_v71.Size = New System.Drawing.Size(550, 147)
 		Me.U5_GitHub_Tuto_v71.TabIndex = 0
 		'
+		'Label2
+		'
+		Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+		Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label2.ForeColor = System.Drawing.Color.Maroon
+		Me.Label2.Location = New System.Drawing.Point(18, 99)
+		Me.Label2.Name = "Label2"
+		Me.Label2.Size = New System.Drawing.Size(434, 16)
+		Me.Label2.TabIndex = 3
+		Me.Label2.Text = "Branch Integration - Test Cherry Pick"
+		Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Label2.UseCompatibleTextRendering = True
+		'
 		'Form_Tuto_v7
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -185,4 +201,5 @@ Partial Class Form_Tuto_v7
 	Friend WithEvents TabPage3 As TabPage
 	Friend WithEvents U5_GitHub_Tuto_v71 As U5_GitHub_Tuto_v7
 	Friend WithEvents U_Memo_Txt_Mirror1 As Common_All_2013_a.U_Memo_Txt_Mirror
+	Friend WithEvents Label2 As Label
 End Class
