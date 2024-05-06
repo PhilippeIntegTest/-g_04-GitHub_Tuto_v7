@@ -141,6 +141,13 @@ Trouvé sur: https://stackoverflow.com/questions/39390490/extract-file-using-sev
 SevenZipBase.SetLibraryPath("C:\Dev\7z.dll")
 Dim Extractor As New SevenZipExtractor(tbExtractFile.Text)
 Extractor.ExtractArchive(tbExtractPath.Text)
+============================================================
+                 Mieux: utiliser les fonctions .Net:
+============================================================
+    --&gt; On peut lister les fichiers de l'archive (Voir si ça marche avec 7Zip ?
+    using (ZipArchive archive = ZipFile.OpenRead(zipPath))
+        {     foreach (ZipArchiveEntry entry in archive.Entries)
+
 
 </value>
   </data>

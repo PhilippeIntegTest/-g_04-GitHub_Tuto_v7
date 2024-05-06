@@ -27,9 +27,16 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.Label1 = New System.Windows.Forms.Label()
 		Me.TabControl1 = New System.Windows.Forms.TabControl()
 		Me.TabPage1 = New System.Windows.Forms.TabPage()
+		Me.PictureBox_UML_Result = New System.Windows.Forms.PictureBox()
+		Me.U_Memo_Text_With_Browser2 = New Common_All_2013_a.U_Memo_Text_With_Browser()
+		Me.Label6 = New System.Windows.Forms.Label()
+		Me.Button4 = New System.Windows.Forms.Button()
+		Me.Label5 = New System.Windows.Forms.Label()
+		Me.Button2 = New System.Windows.Forms.Button()
 		Me.Label_Create_Auto_States_For_PlantUML = New System.Windows.Forms.Label()
 		Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
 		Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+		Me.Button3 = New System.Windows.Forms.Button()
 		Me.Label4 = New System.Windows.Forms.Label()
 		Me.U_Memo_Text_With_Browser1 = New Common_All_2013_a.U_Memo_Text_With_Browser()
 		Me.Button1 = New System.Windows.Forms.Button()
@@ -40,20 +47,13 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.U_Memo_Check1 = New Common_All_2013_a.U_Memo_Check()
 		Me.Label2 = New System.Windows.Forms.Label()
 		Me.TabPage2 = New System.Windows.Forms.TabPage()
-		Me.Button2 = New System.Windows.Forms.Button()
-		Me.Label5 = New System.Windows.Forms.Label()
-		Me.Button3 = New System.Windows.Forms.Button()
-		Me.Button4 = New System.Windows.Forms.Button()
-		Me.U_Memo_Text_With_Browser2 = New Common_All_2013_a.U_Memo_Text_With_Browser()
-		Me.Label6 = New System.Windows.Forms.Label()
-		Me.PictureBox_UML_Result = New System.Windows.Forms.PictureBox()
 		Me.TabPage3 = New System.Windows.Forms.TabPage()
 		Me.Label7 = New System.Windows.Forms.Label()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
+		CType(Me.PictureBox_UML_Result, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.GroupBox1.SuspendLayout()
 		Me.TableLayoutPanel1.SuspendLayout()
-		CType(Me.PictureBox_UML_Result, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.TabPage3.SuspendLayout()
 		Me.SuspendLayout()
 		'
@@ -104,6 +104,77 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.TabPage1.TabIndex = 0
 		Me.TabPage1.Text = "Prepare Data to PlanUML"
 		'
+		'PictureBox_UML_Result
+		'
+		Me.PictureBox_UML_Result.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.PictureBox_UML_Result.Location = New System.Drawing.Point(488, 377)
+		Me.PictureBox_UML_Result.Name = "PictureBox_UML_Result"
+		Me.PictureBox_UML_Result.Size = New System.Drawing.Size(571, 318)
+		Me.PictureBox_UML_Result.TabIndex = 19
+		Me.PictureBox_UML_Result.TabStop = False
+		'
+		'U_Memo_Text_With_Browser2
+		'
+		Me.U_Memo_Text_With_Browser2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.U_Memo_Text_With_Browser2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.U_Memo_Text_With_Browser2.File_Exists_On_Disk = False
+		Me.U_Memo_Text_With_Browser2.Filter = "All Files (*.*)|*.*"
+		Me.U_Memo_Text_With_Browser2.Location = New System.Drawing.Point(32, 377)
+		Me.U_Memo_Text_With_Browser2.Name = "U_Memo_Text_With_Browser2"
+		Me.U_Memo_Text_With_Browser2.Size = New System.Drawing.Size(440, 19)
+		Me.U_Memo_Text_With_Browser2.TabIndex = 18
+		'
+		'Label6
+		'
+		Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label6.ForeColor = System.Drawing.Color.Maroon
+		Me.Label6.Location = New System.Drawing.Point(32, 358)
+		Me.Label6.Name = "Label6"
+		Me.Label6.Size = New System.Drawing.Size(434, 16)
+		Me.Label6.TabIndex = 17
+		Me.Label6.Text = "RESULT File:    C:\User_Prog\(p_03)_Plant_UML\Input_PlantUML.png"
+		Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Label6.UseCompatibleTextRendering = True
+		'
+		'Button4
+		'
+		Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button4.Location = New System.Drawing.Point(6, 333)
+		Me.Button4.Name = "Button4"
+		Me.Button4.Size = New System.Drawing.Size(460, 22)
+		Me.Button4.TabIndex = 16
+		Me.Button4.Text = "Check and load Result (C:\User_Prog\(p_03)_Plant_UML\Input_PlantUML.png)"
+		Me.Button4.UseVisualStyleBackColor = False
+		'
+		'Label5
+		'
+		Me.Label5.AutoSize = True
+		Me.Label5.BackColor = System.Drawing.Color.Navy
+		Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label5.ForeColor = System.Drawing.Color.Yellow
+		Me.Label5.Location = New System.Drawing.Point(6, 255)
+		Me.Label5.Name = "Label5"
+		Me.Label5.Size = New System.Drawing.Size(312, 48)
+		Me.Label5.TabIndex = 15
+		Me.Label5.Text = "java -jar plantuml.jar file1 file2 file3" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "    Input UML file:  C:\User_Prog\Inp" &
+	"ut_PlantUML.txt"
+		'
+		'Button2
+		'
+		Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button2.Location = New System.Drawing.Point(6, 230)
+		Me.Button2.Name = "Button2"
+		Me.Button2.Size = New System.Drawing.Size(309, 22)
+		Me.Button2.TabIndex = 14
+		Me.Button2.Text = "Call PlantUML with 3 arguments"
+		Me.Button2.UseVisualStyleBackColor = False
+		'
 		'Label_Create_Auto_States_For_PlantUML
 		'
 		Me.Label_Create_Auto_States_For_PlantUML.AutoSize = True
@@ -140,6 +211,18 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.GroupBox1.TabStop = False
 		Me.GroupBox1.Text = "Check PlantUML EXE File"
 		'
+		'Button3
+		'
+		Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button3.Location = New System.Drawing.Point(6, 91)
+		Me.Button3.Name = "Button3"
+		Me.Button3.Size = New System.Drawing.Size(309, 22)
+		Me.Button3.TabIndex = 12
+		Me.Button3.Text = "Check if java is installed"
+		Me.Button3.UseVisualStyleBackColor = False
+		'
 		'Label4
 		'
 		Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
@@ -148,9 +231,10 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.Label4.ForeColor = System.Drawing.Color.Black
 		Me.Label4.Location = New System.Drawing.Point(137, 44)
 		Me.Label4.Name = "Label4"
-		Me.Label4.Size = New System.Drawing.Size(434, 16)
+		Me.Label4.Size = New System.Drawing.Size(434, 27)
 		Me.Label4.TabIndex = 11
-		Me.Label4.Text = "Box Storage for ALL additional files (PlantUML.jar)"
+		Me.Label4.Text = "Box Storage for ALL additional files (PlantUML.jar)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "==> Voir: utiliser using Sys" &
+	"tem.IO.Compression;" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
 		Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		Me.Label4.UseCompatibleTextRendering = True
 		'
@@ -276,112 +360,28 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.TabPage2.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage2.Name = "TabPage2"
 		Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-		Me.TabPage2.Size = New System.Drawing.Size(1071, 612)
+		Me.TabPage2.Size = New System.Drawing.Size(1071, 726)
 		Me.TabPage2.TabIndex = 1
 		Me.TabPage2.Text = "Show PLANTUML Graph"
-		'
-		'Button2
-		'
-		Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-		Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Button2.Location = New System.Drawing.Point(6, 230)
-		Me.Button2.Name = "Button2"
-		Me.Button2.Size = New System.Drawing.Size(309, 22)
-		Me.Button2.TabIndex = 14
-		Me.Button2.Text = "Call PlantUML with 3 arguments"
-		Me.Button2.UseVisualStyleBackColor = False
-		'
-		'Label5
-		'
-		Me.Label5.AutoSize = True
-		Me.Label5.BackColor = System.Drawing.Color.Navy
-		Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Label5.ForeColor = System.Drawing.Color.Yellow
-		Me.Label5.Location = New System.Drawing.Point(6, 255)
-		Me.Label5.Name = "Label5"
-		Me.Label5.Size = New System.Drawing.Size(312, 48)
-		Me.Label5.TabIndex = 15
-		Me.Label5.Text = "java -jar plantuml.jar file1 file2 file3" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "    Input UML file:  C:\User_Prog\Inp" &
-	"ut_PlantUML.txt"
-		'
-		'Button3
-		'
-		Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-		Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Button3.Location = New System.Drawing.Point(6, 74)
-		Me.Button3.Name = "Button3"
-		Me.Button3.Size = New System.Drawing.Size(309, 22)
-		Me.Button3.TabIndex = 12
-		Me.Button3.Text = "Check if java is installed"
-		Me.Button3.UseVisualStyleBackColor = False
-		'
-		'Button4
-		'
-		Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-		Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Button4.Location = New System.Drawing.Point(6, 333)
-		Me.Button4.Name = "Button4"
-		Me.Button4.Size = New System.Drawing.Size(460, 22)
-		Me.Button4.TabIndex = 16
-		Me.Button4.Text = "Check and load Result (C:\User_Prog\(p_03)_Plant_UML\Input_PlantUML.png)"
-		Me.Button4.UseVisualStyleBackColor = False
-		'
-		'U_Memo_Text_With_Browser2
-		'
-		Me.U_Memo_Text_With_Browser2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-		Me.U_Memo_Text_With_Browser2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-		Me.U_Memo_Text_With_Browser2.File_Exists_On_Disk = False
-		Me.U_Memo_Text_With_Browser2.Filter = "All Files (*.*)|*.*"
-		Me.U_Memo_Text_With_Browser2.Location = New System.Drawing.Point(32, 377)
-		Me.U_Memo_Text_With_Browser2.Name = "U_Memo_Text_With_Browser2"
-		Me.U_Memo_Text_With_Browser2.Size = New System.Drawing.Size(440, 19)
-		Me.U_Memo_Text_With_Browser2.TabIndex = 18
-		'
-		'Label6
-		'
-		Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-		Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-		Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Label6.ForeColor = System.Drawing.Color.Maroon
-		Me.Label6.Location = New System.Drawing.Point(32, 358)
-		Me.Label6.Name = "Label6"
-		Me.Label6.Size = New System.Drawing.Size(434, 16)
-		Me.Label6.TabIndex = 17
-		Me.Label6.Text = "RESULT File:    C:\User_Prog\(p_03)_Plant_UML\Input_PlantUML.png"
-		Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-		Me.Label6.UseCompatibleTextRendering = True
-		'
-		'PictureBox_UML_Result
-		'
-		Me.PictureBox_UML_Result.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-		Me.PictureBox_UML_Result.Location = New System.Drawing.Point(488, 377)
-		Me.PictureBox_UML_Result.Name = "PictureBox_UML_Result"
-		Me.PictureBox_UML_Result.Size = New System.Drawing.Size(571, 318)
-		Me.PictureBox_UML_Result.TabIndex = 19
-		Me.PictureBox_UML_Result.TabStop = False
 		'
 		'TabPage3
 		'
 		Me.TabPage3.Controls.Add(Me.Label7)
 		Me.TabPage3.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage3.Name = "TabPage3"
-		Me.TabPage3.Size = New System.Drawing.Size(1071, 612)
+		Me.TabPage3.Size = New System.Drawing.Size(1071, 726)
 		Me.TabPage3.TabIndex = 2
 		Me.TabPage3.Text = "7Zip Extractor and Architecture"
 		Me.TabPage3.UseVisualStyleBackColor = True
 		'
 		'Label7
 		'
-		Me.Label7.AutoSize = True
-		Me.Label7.BackColor = System.Drawing.Color.Navy
+		Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
 		Me.Label7.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label7.ForeColor = System.Drawing.Color.Yellow
 		Me.Label7.Location = New System.Drawing.Point(15, 24)
 		Me.Label7.Name = "Label7"
-		Me.Label7.Size = New System.Drawing.Size(534, 240)
+		Me.Label7.Size = New System.Drawing.Size(588, 410)
 		Me.Label7.TabIndex = 14
 		Me.Label7.Text = resources.GetString("Label7.Text")
 		'
@@ -399,11 +399,10 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.TabControl1.ResumeLayout(False)
 		Me.TabPage1.ResumeLayout(False)
 		Me.TabPage1.PerformLayout()
+		CType(Me.PictureBox_UML_Result, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.GroupBox1.ResumeLayout(False)
 		Me.TableLayoutPanel1.ResumeLayout(False)
-		CType(Me.PictureBox_UML_Result, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.TabPage3.ResumeLayout(False)
-		Me.TabPage3.PerformLayout()
 		Me.ResumeLayout(False)
 
 	End Sub

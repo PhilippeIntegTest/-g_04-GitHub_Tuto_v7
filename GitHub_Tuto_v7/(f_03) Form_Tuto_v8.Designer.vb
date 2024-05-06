@@ -34,6 +34,7 @@ Partial Class Form_Tuto_v7
 		Me.U5_GitHub_Tuto_v71 = New GitHub_Tuto_v7.U5_GitHub_Tuto_v8()
 		Me.TabPage4 = New System.Windows.Forms.TabPage()
 		Me.U5_PlantUML_MindMap_v11 = New GitHub_Tuto_v7.U5_PlantUML_MindMap_v1()
+		Me.Label2 = New System.Windows.Forms.Label()
 		U_Memo_Check1 = New Common_All_2013_a.U_Memo_Check()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
@@ -97,7 +98,7 @@ Partial Class Form_Tuto_v7
 		Me.TabPage1.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage1.Name = "TabPage1"
 		Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-		Me.TabPage1.Size = New System.Drawing.Size(1126, 582)
+		Me.TabPage1.Size = New System.Drawing.Size(1126, 813)
 		Me.TabPage1.TabIndex = 0
 		Me.TabPage1.Text = "Main Page"
 		'
@@ -134,11 +135,12 @@ Partial Class Form_Tuto_v7
 		'TabPage2
 		'
 		Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+		Me.TabPage2.Controls.Add(Me.Label2)
 		Me.TabPage2.Controls.Add(Me.Label3)
 		Me.TabPage2.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage2.Name = "TabPage2"
 		Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-		Me.TabPage2.Size = New System.Drawing.Size(1126, 582)
+		Me.TabPage2.Size = New System.Drawing.Size(1126, 813)
 		Me.TabPage2.TabIndex = 1
 		Me.TabPage2.Text = "Version Tree (GitHub)"
 		'
@@ -148,7 +150,7 @@ Partial Class Form_Tuto_v7
 		Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 		Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label3.ForeColor = System.Drawing.Color.DarkViolet
-		Me.Label3.Location = New System.Drawing.Point(102, 14)
+		Me.Label3.Location = New System.Drawing.Point(102, 29)
 		Me.Label3.Name = "Label3"
 		Me.Label3.Size = New System.Drawing.Size(211, 16)
 		Me.Label3.TabIndex = 1
@@ -195,6 +197,19 @@ Partial Class Form_Tuto_v7
 		Me.U5_PlantUML_MindMap_v11.Size = New System.Drawing.Size(1099, 793)
 		Me.U5_PlantUML_MindMap_v11.TabIndex = 0
 		'
+		'Label2
+		'
+		Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+		Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label2.ForeColor = System.Drawing.Color.DarkViolet
+		Me.Label2.Location = New System.Drawing.Point(102, 65)
+		Me.Label2.Name = "Label2"
+		Me.Label2.Size = New System.Drawing.Size(211, 16)
+		Me.Label2.TabIndex = 2
+		Me.Label2.Text = "Branche JSON (Avant Merge Emin)"
+		Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
 		'Form_Tuto_v7
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -225,4 +240,5 @@ Partial Class Form_Tuto_v7
 	Friend WithEvents U5_Share_Global_Structure_Test1 As U5_Share_Global_Structure_Test
 	Friend WithEvents TabPage4 As TabPage
 	Friend WithEvents U5_PlantUML_MindMap_v11 As U5_PlantUML_MindMap_v1
+	Friend WithEvents Label2 As Label
 End Class
