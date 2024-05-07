@@ -60,7 +60,7 @@ Partial Class Form_Tuto_v7
         U_Memo_Check1.Design_Parent_Name = "(Design) Parent.Name = TabPage1"
         U_Memo_Check1.ForeColor = System.Drawing.Color.Coral
         U_Memo_Check1.Location = New System.Drawing.Point(8, 7)
-        U_Memo_Check1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        U_Memo_Check1.Margin = New System.Windows.Forms.Padding(5)
         U_Memo_Check1.Name = "U_Memo_Check1"
         U_Memo_Check1.Parent_Name = Nothing
         U_Memo_Check1.Parent_Parent_Name = Nothing
@@ -91,7 +91,7 @@ Partial Class Form_Tuto_v7
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Location = New System.Drawing.Point(3, 47)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(1512, 1036)
@@ -104,9 +104,9 @@ Partial Class Form_Tuto_v7
         Me.TabPage1.Controls.Add(U_Memo_Check1)
         Me.TabPage1.Controls.Add(Me.U_Memo_Txt_Mirror1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 28)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Size = New System.Drawing.Size(1504, 1004)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Main Page"
@@ -116,7 +116,7 @@ Partial Class Form_Tuto_v7
         Me.U5_Share_Global_Structure_Test1.BackColor = System.Drawing.Color.LavenderBlush
         Me.U5_Share_Global_Structure_Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.U5_Share_Global_Structure_Test1.Location = New System.Drawing.Point(4, 58)
-        Me.U5_Share_Global_Structure_Test1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.U5_Share_Global_Structure_Test1.Margin = New System.Windows.Forms.Padding(5)
         Me.U5_Share_Global_Structure_Test1.Name = "U5_Share_Global_Structure_Test1"
         Me.U5_Share_Global_Structure_Test1.Size = New System.Drawing.Size(1129, 628)
         Me.U5_Share_Global_Structure_Test1.TabIndex = 3
@@ -148,9 +148,9 @@ Partial Class Form_Tuto_v7
         Me.TabPage2.Controls.Add(Me.Label2)
         Me.TabPage2.Controls.Add(Me.Label3)
         Me.TabPage2.Location = New System.Drawing.Point(4, 28)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Size = New System.Drawing.Size(1504, 1004)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Version Tree (GitHub)"
@@ -188,7 +188,7 @@ Partial Class Form_Tuto_v7
         Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.TabPage3.Controls.Add(Me.U5_GitHub_Tuto_v71)
         Me.TabPage3.Location = New System.Drawing.Point(4, 28)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(1504, 1004)
         Me.TabPage3.TabIndex = 2
@@ -200,7 +200,7 @@ Partial Class Form_Tuto_v7
         Me.U5_GitHub_Tuto_v71.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.U5_GitHub_Tuto_v71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.U5_GitHub_Tuto_v71.Location = New System.Drawing.Point(21, 4)
-        Me.U5_GitHub_Tuto_v71.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.U5_GitHub_Tuto_v71.Margin = New System.Windows.Forms.Padding(5)
         Me.U5_GitHub_Tuto_v71.Name = "U5_GitHub_Tuto_v71"
         Me.U5_GitHub_Tuto_v71.Size = New System.Drawing.Size(733, 310)
         Me.U5_GitHub_Tuto_v71.TabIndex = 0
@@ -209,7 +209,7 @@ Partial Class Form_Tuto_v7
         '
         Me.TabPage4.Controls.Add(Me.U5_PlantUML_MindMap_v11)
         Me.TabPage4.Location = New System.Drawing.Point(4, 28)
-        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Size = New System.Drawing.Size(1504, 1004)
         Me.TabPage4.TabIndex = 3
@@ -222,7 +222,7 @@ Partial Class Form_Tuto_v7
         Me.U5_PlantUML_MindMap_v11.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.U5_PlantUML_MindMap_v11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.U5_PlantUML_MindMap_v11.Location = New System.Drawing.Point(9, 5)
-        Me.U5_PlantUML_MindMap_v11.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.U5_PlantUML_MindMap_v11.Margin = New System.Windows.Forms.Padding(5)
         Me.U5_PlantUML_MindMap_v11.Name = "U5_PlantUML_MindMap_v11"
         Me.U5_PlantUML_MindMap_v11.Size = New System.Drawing.Size(1465, 976)
         Me.U5_PlantUML_MindMap_v11.TabIndex = 0
@@ -241,10 +241,10 @@ Partial Class Form_Tuto_v7
         '
         Me.U5_JSON_Read_Write1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.U5_JSON_Read_Write1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.U5_JSON_Read_Write1.Location = New System.Drawing.Point(6, 4)
+        Me.U5_JSON_Read_Write1.Location = New System.Drawing.Point(6, 0)
         Me.U5_JSON_Read_Write1.Margin = New System.Windows.Forms.Padding(4)
         Me.U5_JSON_Read_Write1.Name = "U5_JSON_Read_Write1"
-        Me.U5_JSON_Read_Write1.Size = New System.Drawing.Size(1494, 891)
+        Me.U5_JSON_Read_Write1.Size = New System.Drawing.Size(1494, 895)
         Me.U5_JSON_Read_Write1.TabIndex = 0
         '
         'Form_Tuto_v7
@@ -255,7 +255,7 @@ Partial Class Form_Tuto_v7
         Me.ClientSize = New System.Drawing.Size(1539, 983)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form_Tuto_v7"
         Me.Text = "GitHub Tuto_V7 (CherryPeek)"
         Me.TabControl1.ResumeLayout(False)
