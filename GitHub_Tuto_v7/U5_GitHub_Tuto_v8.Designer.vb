@@ -147,15 +147,15 @@ Partial Class U5_GitHub_Tuto_v8
 		'
 		'Label9
 		'
-		Me.Label9.BackColor = System.Drawing.Color.Yellow
+		Me.Label9.BackColor = System.Drawing.Color.White
 		Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-		Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label9.Font = New System.Drawing.Font("Comic Sans MS", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label9.ForeColor = System.Drawing.Color.Maroon
 		Me.Label9.Location = New System.Drawing.Point(32, 24)
 		Me.Label9.Name = "Label9"
 		Me.Label9.Size = New System.Drawing.Size(412, 16)
 		Me.Label9.TabIndex = 9
-		Me.Label9.Text = "Git: Branch Feature -->  Add Label Yellow"
+		Me.Label9.Text = "GitHub:    https://github.com/PhilippeIntegTest/-g_04-GitHub_Tuto_v7"
 		Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		Me.Label9.UseCompatibleTextRendering = True
 		'
