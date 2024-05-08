@@ -216,7 +216,7 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
 		Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Button3.Location = New System.Drawing.Point(6, 91)
+		Me.Button3.Location = New System.Drawing.Point(6, 108)
 		Me.Button3.Name = "Button3"
 		Me.Button3.Size = New System.Drawing.Size(309, 22)
 		Me.Button3.TabIndex = 12
