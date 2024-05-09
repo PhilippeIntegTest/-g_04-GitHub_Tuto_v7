@@ -20,13 +20,7 @@ Public Class U5_PlantUML_MindMap_v1
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-
-        'System.IO.Compression.
-
-
-    End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         On Error GoTo Errhandler_Avec_Diagnostic
@@ -129,7 +123,62 @@ Errhandler_Avec_Diagnostic:
         '------------         Fin traitement des erreurs                   -------------
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    Private Sub Button_Check_Directory_for_Java_Click(sender As Object, e As EventArgs) Handles Button_Check_Directory_for_Java.Click
+
+        Button_Check_Directory_for_Java.BackColor = Color.Gold
+        Check_Java_Directory_Is_Present()
 
     End Sub
+
+    Private Sub Check_Java_Directory_Is_Present()
+        On Error GoTo Errhandler_Avec_Diagnostic
+        '------------------------------------------------------------------------------------
+        '-----  Check if Java subDir exists  (Next: check Java is responding)             ---
+        '------------------------------------------------------------------------------------
+        Dim String_Path_For_Java As String
+        String_Path_For_Java = "C:\Program Files\Java"
+        '---- Original Path= C:\Program Files\Java\jre1.8.0_201\bin\java.exe           ------
+        '---- Check if file is in this subDir        ---------------------------------------- 
+        Dim Directory_Exists As Boolean
+        Directory_Exists = System.IO.Directory.Exists(String_Path_For_Java)
+
+        Label_Java_Directory.Text = "Path for Java Appli= " & String_Path_For_Java
+        If (Directory_Exists = False) Then
+            Button_Check_Directory_for_Java.BackColor = Color.OrangeRed
+            Label_Java_Directory.BackColor = Color.OrangeRed
+            '---- Could Exit Sub here !       -----------------------------------------------
+        Else
+            Button_Check_Directory_for_Java.BackColor = Color.YellowGreen
+            Label_Java_Directory.BackColor = Color.YellowGreen
+        End If
+
+        '---- Check if file (PlanUML.jar) exists       --------------------------------------
+
+
+        Exit Sub
+        '-------------------------------------------------------------------------------
+        '------------             Traitement des erreurs                      ----------
+        '-------------------------------------------------------------------------------
+Errhandler_Avec_Diagnostic:
+        Call U_Msg_Local1.Affiche_Erreur("Error Launcher: Check_Jar_File_Is_Present() ")
+        Resume Next
+        '------------         Fin traitement des erreurs                   -------------
+    End Sub
+
+    Private Sub Button_Check_All_Java_Present_Click(sender As Object, e As EventArgs) Handles Button_Check_All_Java_Present.Click
+
+
+
+
+
+    End Sub
+
+
+
+
+
+
+
+
 End Class
