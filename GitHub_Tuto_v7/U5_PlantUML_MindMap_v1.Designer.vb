@@ -46,14 +46,25 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.U_Memo_Use_Local_Data = New Common_All_2013_a.U_Memo_Check()
 		Me.U_Memo_Check1 = New Common_All_2013_a.U_Memo_Check()
 		Me.Label2 = New System.Windows.Forms.Label()
+		Me.TabPage4 = New System.Windows.Forms.TabPage()
+		Me.Label_Path_For_Jar_File = New System.Windows.Forms.Label()
+		Me.Label11 = New System.Windows.Forms.Label()
+		Me.Button_Check_PlantUML_Is_Present = New System.Windows.Forms.Button()
+		Me.Label9 = New System.Windows.Forms.Label()
+		Me.Label_Full_Path_Exe = New System.Windows.Forms.Label()
+		Me.Label8 = New System.Windows.Forms.Label()
+		Me.Button6 = New System.Windows.Forms.Button()
+		Me.Button5 = New System.Windows.Forms.Button()
 		Me.TabPage2 = New System.Windows.Forms.TabPage()
 		Me.TabPage3 = New System.Windows.Forms.TabPage()
 		Me.Label7 = New System.Windows.Forms.Label()
+		Me.U_Msg_Local1 = New Common_All_2013_a.U_Msg_Local()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
 		CType(Me.PictureBox_UML_Result, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.GroupBox1.SuspendLayout()
 		Me.TableLayoutPanel1.SuspendLayout()
+		Me.TabPage4.SuspendLayout()
 		Me.TabPage3.SuspendLayout()
 		Me.SuspendLayout()
 		'
@@ -74,6 +85,7 @@ Partial Class U5_PlantUML_MindMap_v1
 		'
 		Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons
 		Me.TabControl1.Controls.Add(Me.TabPage1)
+		Me.TabControl1.Controls.Add(Me.TabPage4)
 		Me.TabControl1.Controls.Add(Me.TabPage2)
 		Me.TabControl1.Controls.Add(Me.TabPage3)
 		Me.TabControl1.Location = New System.Drawing.Point(-1, 22)
@@ -216,7 +228,7 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
 		Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Button3.Location = New System.Drawing.Point(6, 108)
+		Me.Button3.Location = New System.Drawing.Point(6, 129)
 		Me.Button3.Name = "Button3"
 		Me.Button3.Size = New System.Drawing.Size(309, 22)
 		Me.Button3.TabIndex = 12
@@ -244,7 +256,7 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.U_Memo_Text_With_Browser1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 		Me.U_Memo_Text_With_Browser1.File_Exists_On_Disk = False
 		Me.U_Memo_Text_With_Browser1.Filter = "All Files (*.*)|*.*"
-		Me.U_Memo_Text_With_Browser1.Location = New System.Drawing.Point(6, 152)
+		Me.U_Memo_Text_With_Browser1.Location = New System.Drawing.Point(6, 173)
 		Me.U_Memo_Text_With_Browser1.Name = "U_Memo_Text_With_Browser1"
 		Me.U_Memo_Text_With_Browser1.Size = New System.Drawing.Size(440, 19)
 		Me.U_Memo_Text_With_Browser1.TabIndex = 10
@@ -267,7 +279,7 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 		Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label3.ForeColor = System.Drawing.Color.Maroon
-		Me.Label3.Location = New System.Drawing.Point(6, 133)
+		Me.Label3.Location = New System.Drawing.Point(6, 154)
 		Me.Label3.Name = "Label3"
 		Me.Label3.Size = New System.Drawing.Size(434, 16)
 		Me.Label3.TabIndex = 9
@@ -354,6 +366,139 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		Me.Label2.UseCompatibleTextRendering = True
 		'
+		'TabPage4
+		'
+		Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+		Me.TabPage4.Controls.Add(Me.Label_Path_For_Jar_File)
+		Me.TabPage4.Controls.Add(Me.Label11)
+		Me.TabPage4.Controls.Add(Me.Button_Check_PlantUML_Is_Present)
+		Me.TabPage4.Controls.Add(Me.Label9)
+		Me.TabPage4.Controls.Add(Me.Label_Full_Path_Exe)
+		Me.TabPage4.Controls.Add(Me.Label8)
+		Me.TabPage4.Controls.Add(Me.Button6)
+		Me.TabPage4.Controls.Add(Me.Button5)
+		Me.TabPage4.Location = New System.Drawing.Point(4, 25)
+		Me.TabPage4.Name = "TabPage4"
+		Me.TabPage4.Size = New System.Drawing.Size(1071, 726)
+		Me.TabPage4.TabIndex = 3
+		Me.TabPage4.Text = "Check ZIP file PlanUML.jar"
+		'
+		'Label_Path_For_Jar_File
+		'
+		Me.Label_Path_For_Jar_File.BackColor = System.Drawing.Color.Yellow
+		Me.Label_Path_For_Jar_File.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label_Path_For_Jar_File.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label_Path_For_Jar_File.ForeColor = System.Drawing.Color.Black
+		Me.Label_Path_For_Jar_File.Location = New System.Drawing.Point(188, 142)
+		Me.Label_Path_For_Jar_File.Name = "Label_Path_For_Jar_File"
+		Me.Label_Path_For_Jar_File.Size = New System.Drawing.Size(820, 22)
+		Me.Label_Path_For_Jar_File.TabIndex = 19
+		Me.Label_Path_For_Jar_File.Text = "Full Path for PlantUML file:"
+		Me.Label_Path_For_Jar_File.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Label_Path_For_Jar_File.UseCompatibleTextRendering = True
+		'
+		'Label11
+		'
+		Me.Label11.BackColor = System.Drawing.Color.Yellow
+		Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label11.ForeColor = System.Drawing.Color.Maroon
+		Me.Label11.Location = New System.Drawing.Point(39, 142)
+		Me.Label11.Name = "Label11"
+		Me.Label11.Size = New System.Drawing.Size(134, 22)
+		Me.Label11.TabIndex = 18
+		Me.Label11.Text = "Full Path for .jar File"
+		Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Label11.UseCompatibleTextRendering = True
+		'
+		'Button_Check_PlantUML_Is_Present
+		'
+		Me.Button_Check_PlantUML_Is_Present.Anchor = System.Windows.Forms.AnchorStyles.None
+		Me.Button_Check_PlantUML_Is_Present.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.Button_Check_PlantUML_Is_Present.FlatAppearance.BorderColor = System.Drawing.Color.Purple
+		Me.Button_Check_PlantUML_Is_Present.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button_Check_PlantUML_Is_Present.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button_Check_PlantUML_Is_Present.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+		Me.Button_Check_PlantUML_Is_Present.Location = New System.Drawing.Point(39, 114)
+		Me.Button_Check_PlantUML_Is_Present.Margin = New System.Windows.Forms.Padding(0)
+		Me.Button_Check_PlantUML_Is_Present.Name = "Button_Check_PlantUML_Is_Present"
+		Me.Button_Check_PlantUML_Is_Present.Size = New System.Drawing.Size(263, 23)
+		Me.Button_Check_PlantUML_Is_Present.TabIndex = 17
+		Me.Button_Check_PlantUML_Is_Present.Text = "Check PlantUML file (plantuml-1.2024.4.jar)"
+		Me.Button_Check_PlantUML_Is_Present.TextAlign = System.Drawing.ContentAlignment.TopLeft
+		Me.Button_Check_PlantUML_Is_Present.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage
+		Me.Button_Check_PlantUML_Is_Present.UseVisualStyleBackColor = True
+		'
+		'Label9
+		'
+		Me.Label9.AutoSize = True
+		Me.Label9.BackColor = System.Drawing.Color.Navy
+		Me.Label9.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label9.ForeColor = System.Drawing.Color.Yellow
+		Me.Label9.Location = New System.Drawing.Point(288, 33)
+		Me.Label9.Name = "Label9"
+		Me.Label9.Size = New System.Drawing.Size(416, 16)
+		Me.Label9.TabIndex = 16
+		Me.Label9.Text = "Note: à terme: mettre cette recherche du Zip et JAR dans un UserControl"
+		'
+		'Label_Full_Path_Exe
+		'
+		Me.Label_Full_Path_Exe.BackColor = System.Drawing.Color.Yellow
+		Me.Label_Full_Path_Exe.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label_Full_Path_Exe.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label_Full_Path_Exe.ForeColor = System.Drawing.Color.Maroon
+		Me.Label_Full_Path_Exe.Location = New System.Drawing.Point(188, 85)
+		Me.Label_Full_Path_Exe.Name = "Label_Full_Path_Exe"
+		Me.Label_Full_Path_Exe.Size = New System.Drawing.Size(644, 16)
+		Me.Label_Full_Path_Exe.TabIndex = 12
+		Me.Label_Full_Path_Exe.Text = "Full Path for Exe file:"
+		Me.Label_Full_Path_Exe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Label_Full_Path_Exe.UseCompatibleTextRendering = True
+		'
+		'Label8
+		'
+		Me.Label8.BackColor = System.Drawing.Color.Yellow
+		Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label8.ForeColor = System.Drawing.Color.Maroon
+		Me.Label8.Location = New System.Drawing.Point(39, 85)
+		Me.Label8.Name = "Label8"
+		Me.Label8.Size = New System.Drawing.Size(134, 16)
+		Me.Label8.TabIndex = 11
+		Me.Label8.Text = "Full Path for Exe file:"
+		Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Label8.UseCompatibleTextRendering = True
+		'
+		'Button6
+		'
+		Me.Button6.Anchor = System.Windows.Forms.AnchorStyles.None
+		Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.Purple
+		Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+		Me.Button6.Location = New System.Drawing.Point(39, 62)
+		Me.Button6.Margin = New System.Windows.Forms.Padding(0)
+		Me.Button6.Name = "Button6"
+		Me.Button6.Size = New System.Drawing.Size(245, 20)
+		Me.Button6.TabIndex = 10
+		Me.Button6.Text = "Check Exe file dir"
+		Me.Button6.TextAlign = System.Drawing.ContentAlignment.TopLeft
+		Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage
+		Me.Button6.UseVisualStyleBackColor = True
+		'
+		'Button5
+		'
+		Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button5.Location = New System.Drawing.Point(17, 27)
+		Me.Button5.Name = "Button5"
+		Me.Button5.Size = New System.Drawing.Size(245, 22)
+		Me.Button5.TabIndex = 9
+		Me.Button5.Text = "Check PlantUML.Jar is present"
+		Me.Button5.UseVisualStyleBackColor = False
+		'
 		'TabPage2
 		'
 		Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -385,6 +530,17 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.Label7.TabIndex = 14
 		Me.Label7.Text = resources.GetString("Label7.Text")
 		'
+		'U_Msg_Local1
+		'
+		Me.U_Msg_Local1.AutoSize = True
+		Me.U_Msg_Local1.BackColor = System.Drawing.Color.Magenta
+		Me.U_Msg_Local1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.U_Msg_Local1.Design_Ident_Date = Nothing
+		Me.U_Msg_Local1.Location = New System.Drawing.Point(857, -1)
+		Me.U_Msg_Local1.Name = "U_Msg_Local1"
+		Me.U_Msg_Local1.Size = New System.Drawing.Size(75, 18)
+		Me.U_Msg_Local1.TabIndex = 6
+		'
 		'U5_PlantUML_MindMap_v1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -392,6 +548,7 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.AutoScroll = True
 		Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
 		Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Controls.Add(Me.U_Msg_Local1)
 		Me.Controls.Add(Me.TabControl1)
 		Me.Controls.Add(Me.Label1)
 		Me.Name = "U5_PlantUML_MindMap_v1"
@@ -402,8 +559,11 @@ Partial Class U5_PlantUML_MindMap_v1
 		CType(Me.PictureBox_UML_Result, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.GroupBox1.ResumeLayout(False)
 		Me.TableLayoutPanel1.ResumeLayout(False)
+		Me.TabPage4.ResumeLayout(False)
+		Me.TabPage4.PerformLayout()
 		Me.TabPage3.ResumeLayout(False)
 		Me.ResumeLayout(False)
+		Me.PerformLayout()
 
 	End Sub
 
@@ -432,4 +592,14 @@ Partial Class U5_PlantUML_MindMap_v1
 	Friend WithEvents Button3 As Button
 	Friend WithEvents TabPage3 As TabPage
 	Friend WithEvents Label7 As Label
+	Friend WithEvents TabPage4 As TabPage
+	Friend WithEvents Button6 As Button
+	Friend WithEvents Button5 As Button
+	Friend WithEvents Label_Full_Path_Exe As Label
+	Friend WithEvents Label8 As Label
+	Friend WithEvents U_Msg_Local1 As Common_All_2013_a.U_Msg_Local
+	Friend WithEvents Label_Path_For_Jar_File As Label
+	Friend WithEvents Label11 As Label
+	Friend WithEvents Button_Check_PlantUML_Is_Present As Button
+	Friend WithEvents Label9 As Label
 End Class

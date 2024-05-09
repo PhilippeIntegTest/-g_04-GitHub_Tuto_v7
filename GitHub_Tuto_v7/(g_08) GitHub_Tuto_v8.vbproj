@@ -151,7 +151,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="%28c_03%29_Common_Links\%28c_01%29 Common_0\%28p_03%29_Plant_UML.7z" />
+    <None Include="%28c_03%29_Common_Links\%28c_01%29 Common_0\%28p_03%29_Plant_UML.7z">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -164,9 +166,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="%28c_03%29_Common_Links\%28c_01%29 Common_0\plantuml-1.2024.4.jar">
+    <None Include="%28c_03%29_Common_Links\%28c_01%29 Common_0\plantuml-1.2024.4.jar">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
