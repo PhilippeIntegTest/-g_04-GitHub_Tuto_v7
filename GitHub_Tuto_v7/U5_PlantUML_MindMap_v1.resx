@@ -126,6 +126,62 @@ NOTE: PlantUML crée les relations dans l'ordre d'apparition
  et pas suivant les OBJETS !
 </value>
   </data>
+  <data name="Label12.Text" xml:space="preserve">
+    <value>==========================================================================
+======     Utilisation de -p  Password                    ================
+==========================================================================
+
+
+
+string tempFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+System.Diagnostics.Process defrag1 = System.Diagnostics.Process.Start(@"AusLogics_Defrag.exe", string.Format(" -o{0} -y -Pthisisthepass", tempFolder));
+defrag1.WaitForExit();
+string executableDirectoryName = Path.GetDirectoryName(Application.ExecutablePath);
+System.Diagnostics.Process defrag2 = System.Diagnostics.Process.Start(tempFolder + "\\" + "AusLogics_Defrag" + "\\" + "DiskDefrag.exe", "");
+defrag2.WaitForExit();
+System.IO.Directory.Delete(tempFolder + "\\" + "AusLogics_Defrag", true);
+
+
+</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>======================================================================================
+====    Exemple Code trouvé sur:                                                                            =====
+====    https://stackoverflow.com/questions/222030/how-do-i-create-7-zip-archives-with-net        =====
+======================================================================================
+
+                string PZipPath = @"C:\Program Files\7-Zip\7z.exe";
+                string sourceCompressDir = @"C:\Test";
+                string targetCompressName = @"C:\Test\abc.zip";
+                string CompressName = targetCompressName.Split('\\').Last();
+                string[] fileCompressList = Directory.GetFiles(sourceCompressDir, "*.*");
+
+                    if (fileCompressList.Length == 0)
+                    {
+                        MessageBox.Show("No file in directory", "Important Message");
+                        return;
+                    }
+                    string filetozip = null;
+                    foreach (string filename in fileCompressList)
+                    {
+                        filetozip = filetozip + "\"" + filename + " ";
+                    }
+
+                    ProcessStartInfo pCompress = new ProcessStartInfo();
+                    pCompress.FileName = PZipPath;
+                    if (chkRequestPWD.Checked == true)
+                    {
+                        pCompress.Arguments = "a -tzip \"" + targetCompressName + "\" " + filetozip + " -mx=9" + " -p" + tbPassword.Text;
+                    }
+                    else
+                    {
+                        pCompress.Arguments = "a -tzip \"" + targetCompressName + "\" \"" + filetozip + "\" -mx=9";
+                    }
+                    pCompress.WindowStyle = ProcessWindowStyle.Hidden;
+                    Process x = Process.Start(pCompress);
+                    x.WaitForExit();
+</value>
+  </data>
   <data name="Label7.Text" xml:space="preserve">
     <value>    Stockage et extraction de PlantUML (Si pas présent !)
 

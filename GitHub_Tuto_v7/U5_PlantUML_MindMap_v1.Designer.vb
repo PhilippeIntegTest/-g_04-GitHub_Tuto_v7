@@ -61,6 +61,8 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.TabPage3 = New System.Windows.Forms.TabPage()
 		Me.Label7 = New System.Windows.Forms.Label()
 		Me.U_Msg_Local1 = New Common_All_2013_a.U_Msg_Local()
+		Me.Label3 = New System.Windows.Forms.Label()
+		Me.Label12 = New System.Windows.Forms.Label()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
 		CType(Me.PictureBox_UML_Result, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -549,6 +551,10 @@ Partial Class U5_PlantUML_MindMap_v1
 		'
 		'TabPage3
 		'
+		Me.TabPage3.AutoScroll = True
+		Me.TabPage3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.TabPage3.Controls.Add(Me.Label12)
+		Me.TabPage3.Controls.Add(Me.Label3)
 		Me.TabPage3.Controls.Add(Me.Label7)
 		Me.TabPage3.Location = New System.Drawing.Point(4, 25)
 		Me.TabPage3.Name = "TabPage3"
@@ -578,6 +584,29 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.U_Msg_Local1.Name = "U_Msg_Local1"
 		Me.U_Msg_Local1.Size = New System.Drawing.Size(75, 18)
 		Me.U_Msg_Local1.TabIndex = 6
+		'
+		'Label3
+		'
+		Me.Label3.BackColor = System.Drawing.Color.Black
+		Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label3.ForeColor = System.Drawing.Color.Lime
+		Me.Label3.Location = New System.Drawing.Point(15, 446)
+		Me.Label3.Name = "Label3"
+		Me.Label3.Size = New System.Drawing.Size(824, 494)
+		Me.Label3.TabIndex = 15
+		Me.Label3.Text = resources.GetString("Label3.Text")
+		'
+		'Label12
+		'
+		Me.Label12.BackColor = System.Drawing.Color.Maroon
+		Me.Label12.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label12.ForeColor = System.Drawing.Color.Aqua
+		Me.Label12.Location = New System.Drawing.Point(609, 203)
+		Me.Label12.Name = "Label12"
+		Me.Label12.Size = New System.Drawing.Size(984, 231)
+		Me.Label12.TabIndex = 16
+		Me.Label12.Text = resources.GetString("Label12.Text")
 		'
 		'U5_PlantUML_MindMap_v1
 		'
@@ -642,4 +671,6 @@ Partial Class U5_PlantUML_MindMap_v1
 	Friend WithEvents Label10 As Label
 	Friend WithEvents Button_Check_Directory_for_Java As Button
 	Friend WithEvents Label_Java_Directory As Label
+	Friend WithEvents Label3 As Label
+	Friend WithEvents Label12 As Label
 End Class
