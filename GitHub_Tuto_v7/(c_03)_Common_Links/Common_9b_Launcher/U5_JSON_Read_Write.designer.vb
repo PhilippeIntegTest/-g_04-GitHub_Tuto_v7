@@ -26,26 +26,25 @@ Partial Class U5_JSON_Read_Write
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(U5_JSON_Read_Write))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.btnConvertJasonToStructure = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.RichTextBoxConvertJasonStructure = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox_Structure = New System.Windows.Forms.RichTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtConvertedVariable = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.Button_Create_JSON_From_Collection = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.U_Memo_Txt_Value_Variable1 = New Common_All_2013_a.U_Memo_Txt_Mirror()
         Me.Label_Variable_Name = New System.Windows.Forms.Label()
         Me.Button_Create_Json_From_Variable = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.lbl_Compare_Read_Write = New System.Windows.Forms.Label()
         Me.btn_Compare_Read_Write = New System.Windows.Forms.Button()
         Me.RichTextBox_Compare_Read_Write = New System.Windows.Forms.RichTextBox()
-        Me.U_Memo_CheckBox_Display = New Common_All_2013_a.U_Memo_Check_Mirror()
         Me.lblTestReadJson = New System.Windows.Forms.Label()
         Me.RichTextBoxRead_Display = New System.Windows.Forms.RichTextBox()
         Me.btnReadJsonFile = New System.Windows.Forms.Button()
@@ -59,9 +58,12 @@ Partial Class U5_JSON_Read_Write
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblConvert = New System.Windows.Forms.Label()
         Me.U_Memo_Directory_Browser1 = New Common_All_2013_a.U_Memo_Directory_Browser()
         Me.U_Draw_Minimize_Maximize1 = New Common_All_2013_a.U_Draw_Minimize_Maximize()
         Me.U_Memo_Text_With_Browser1 = New Common_All_2013_a.U_Memo_Text_With_Browser()
+        Me.U_Memo_Txt_Value_Variable1 = New Common_All_2013_a.U_Memo_Txt_Mirror()
+        Me.U_Memo_CheckBox_Display = New Common_All_2013_a.U_Memo_Check_Mirror()
         Me.U_Msg_Local1 = New Common_All_2013_a.U_Msg_Local()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -77,23 +79,25 @@ Partial Class U5_JSON_Read_Write
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage4)
-        Me.TabControl1.Location = New System.Drawing.Point(5, 91)
+        Me.TabControl1.Location = New System.Drawing.Point(5, 89)
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1204, 600)
+        Me.TabControl1.Size = New System.Drawing.Size(1450, 902)
         Me.TabControl1.TabIndex = 1
         '
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TabPage1.Controls.Add(Me.lblConvert)
+        Me.TabPage1.Controls.Add(Me.Label10)
+        Me.TabPage1.Controls.Add(Me.Label9)
+        Me.TabPage1.Controls.Add(Me.Label7)
         Me.TabPage1.Controls.Add(Me.btnConvertJasonToStructure)
         Me.TabPage1.Controls.Add(Me.Label5)
         Me.TabPage1.Controls.Add(Me.RichTextBoxConvertJasonStructure)
         Me.TabPage1.Controls.Add(Me.RichTextBox_Structure)
         Me.TabPage1.Controls.Add(Me.Label4)
-        Me.TabPage1.Controls.Add(Me.txtConvertedVariable)
-        Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.RichTextBox2)
         Me.TabPage1.Controls.Add(Me.Button_Create_JSON_From_Collection)
@@ -106,14 +110,41 @@ Partial Class U5_JSON_Read_Write
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage1.Size = New System.Drawing.Size(1196, 571)
+        Me.TabPage1.Size = New System.Drawing.Size(1442, 873)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Functional + Unitary test Read + Write_JSon"
+        '
+        'Label10
+        '
+        Me.Label10.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(1028, 30)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(126, 45)
+        Me.Label10.TabIndex = 18
+        Me.Label10.Text = "Variable to convert"
+        '
+        'Label9
+        '
+        Me.Label9.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(1028, 75)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(126, 44)
+        Me.Label9.TabIndex = 17
+        Me.Label9.Text = "Structure to convert"
+        '
+        'Label7
+        '
+        Me.Label7.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(1028, 168)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(108, 43)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "Converted to JSON variable"
         '
         'btnConvertJasonToStructure
         '
         Me.btnConvertJasonToStructure.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnConvertJasonToStructure.Location = New System.Drawing.Point(637, 239)
+        Me.btnConvertJasonToStructure.Location = New System.Drawing.Point(635, 275)
         Me.btnConvertJasonToStructure.Margin = New System.Windows.Forms.Padding(4)
         Me.btnConvertJasonToStructure.Name = "btnConvertJasonToStructure"
         Me.btnConvertJasonToStructure.Size = New System.Drawing.Size(435, 28)
@@ -125,7 +156,7 @@ Partial Class U5_JSON_Read_Write
         '
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label5.Location = New System.Drawing.Point(637, 277)
+        Me.Label5.Location = New System.Drawing.Point(635, 313)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(383, 19)
@@ -134,7 +165,7 @@ Partial Class U5_JSON_Read_Write
         '
         'RichTextBoxConvertJasonStructure
         '
-        Me.RichTextBoxConvertJasonStructure.Location = New System.Drawing.Point(637, 300)
+        Me.RichTextBoxConvertJasonStructure.Location = New System.Drawing.Point(635, 336)
         Me.RichTextBoxConvertJasonStructure.Margin = New System.Windows.Forms.Padding(4)
         Me.RichTextBoxConvertJasonStructure.Name = "RichTextBoxConvertJasonStructure"
         Me.RichTextBoxConvertJasonStructure.Size = New System.Drawing.Size(526, 263)
@@ -143,7 +174,7 @@ Partial Class U5_JSON_Read_Write
         '
         'RichTextBox_Structure
         '
-        Me.RichTextBox_Structure.Location = New System.Drawing.Point(327, 149)
+        Me.RichTextBox_Structure.Location = New System.Drawing.Point(329, 75)
         Me.RichTextBox_Structure.Name = "RichTextBox_Structure"
         Me.RichTextBox_Structure.Size = New System.Drawing.Size(693, 70)
         Me.RichTextBox_Structure.TabIndex = 12
@@ -151,34 +182,18 @@ Partial Class U5_JSON_Read_Write
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(143, 149)
+        Me.Label4.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(1028, 214)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(135, 17)
+        Me.Label4.Size = New System.Drawing.Size(126, 45)
         Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Converted Structure"
-        '
-        'txtConvertedVariable
-        '
-        Me.txtConvertedVariable.Location = New System.Drawing.Point(327, 121)
-        Me.txtConvertedVariable.Name = "txtConvertedVariable"
-        Me.txtConvertedVariable.Size = New System.Drawing.Size(693, 22)
-        Me.txtConvertedVariable.TabIndex = 10
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(143, 124)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(129, 17)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "Converted Variable"
+        Me.Label4.Text = "Converted to JSON Structure"
         '
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label2.Location = New System.Drawing.Point(25, 277)
+        Me.Label2.Location = New System.Drawing.Point(23, 313)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(298, 19)
@@ -187,7 +202,7 @@ Partial Class U5_JSON_Read_Write
         '
         'RichTextBox2
         '
-        Me.RichTextBox2.Location = New System.Drawing.Point(25, 300)
+        Me.RichTextBox2.Location = New System.Drawing.Point(23, 336)
         Me.RichTextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.Size = New System.Drawing.Size(526, 263)
@@ -197,7 +212,7 @@ Partial Class U5_JSON_Read_Write
         'Button_Create_JSON_From_Collection
         '
         Me.Button_Create_JSON_From_Collection.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button_Create_JSON_From_Collection.Location = New System.Drawing.Point(25, 239)
+        Me.Button_Create_JSON_From_Collection.Location = New System.Drawing.Point(23, 275)
         Me.Button_Create_JSON_From_Collection.Margin = New System.Windows.Forms.Padding(4)
         Me.Button_Create_JSON_From_Collection.Name = "Button_Create_JSON_From_Collection"
         Me.Button_Create_JSON_From_Collection.Size = New System.Drawing.Size(435, 28)
@@ -207,7 +222,7 @@ Partial Class U5_JSON_Read_Write
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(327, 85)
+        Me.TextBox2.Location = New System.Drawing.Point(327, 214)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(693, 22)
@@ -215,32 +230,11 @@ Partial Class U5_JSON_Read_Write
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(327, 53)
+        Me.TextBox1.Location = New System.Drawing.Point(329, 168)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(693, 22)
         Me.TextBox1.TabIndex = 4
-        '
-        'U_Memo_Txt_Value_Variable1
-        '
-        Me.U_Memo_Txt_Value_Variable1.A_Memo_Text_First_Init = "95"
-        Me.U_Memo_Txt_Value_Variable1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.U_Memo_Txt_Value_Variable1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.U_Memo_Txt_Value_Variable1.Location = New System.Drawing.Point(327, 30)
-        Me.U_Memo_Txt_Value_Variable1.Margin = New System.Windows.Forms.Padding(0)
-        Me.U_Memo_Txt_Value_Variable1.Memo1_Text = "117"
-        Me.U_Memo_Txt_Value_Variable1.Mirrored_Control = Nothing
-        Me.U_Memo_Txt_Value_Variable1.Mirrored_Control_Exits = False
-        Me.U_Memo_Txt_Value_Variable1.Mode_Memo = True
-        Me.U_Memo_Txt_Value_Variable1.Mode_Mirror = False
-        Me.U_Memo_Txt_Value_Variable1.Name = "U_Memo_Txt_Value_Variable1"
-        Me.U_Memo_Txt_Value_Variable1.Original_Control = Nothing
-        Me.U_Memo_Txt_Value_Variable1.Size = New System.Drawing.Size(105, 20)
-        Me.U_Memo_Txt_Value_Variable1.TabIndex = 3
-        Me.U_Memo_Txt_Value_Variable1.UControl_Border_Size = 0
-        Me.U_Memo_Txt_Value_Variable1.UControl_Text_Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.U_Memo_Txt_Value_Variable1.UCtl_Text_BackColor = System.Drawing.SystemColors.Window
-        Me.U_Memo_Txt_Value_Variable1.UCtl_Text_Color = System.Drawing.SystemColors.WindowText
         '
         'Label_Variable_Name
         '
@@ -269,7 +263,6 @@ Partial Class U5_JSON_Read_Write
         Me.TabPage2.Controls.Add(Me.lbl_Compare_Read_Write)
         Me.TabPage2.Controls.Add(Me.btn_Compare_Read_Write)
         Me.TabPage2.Controls.Add(Me.RichTextBox_Compare_Read_Write)
-        Me.TabPage2.Controls.Add(Me.U_Memo_CheckBox_Display)
         Me.TabPage2.Controls.Add(Me.lblTestReadJson)
         Me.TabPage2.Controls.Add(Me.RichTextBoxRead_Display)
         Me.TabPage2.Controls.Add(Me.btnReadJsonFile)
@@ -277,11 +270,12 @@ Partial Class U5_JSON_Read_Write
         Me.TabPage2.Controls.Add(Me.lblTestWriteJson)
         Me.TabPage2.Controls.Add(Me.btnWriteJsonFile)
         Me.TabPage2.Controls.Add(Me.Label6)
+        Me.TabPage2.Controls.Add(Me.U_Memo_CheckBox_Display)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage2.Size = New System.Drawing.Size(1196, 571)
+        Me.TabPage2.Size = New System.Drawing.Size(1442, 873)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Developpement READ & WRITE Json"
         '
@@ -312,34 +306,6 @@ Partial Class U5_JSON_Read_Write
         Me.RichTextBox_Compare_Read_Write.Size = New System.Drawing.Size(265, 247)
         Me.RichTextBox_Compare_Read_Write.TabIndex = 113
         Me.RichTextBox_Compare_Read_Write.Text = ""
-        '
-        'U_Memo_CheckBox_Display
-        '
-        Me.U_Memo_CheckBox_Display.BackColor = System.Drawing.Color.Gainsboro
-        Me.U_Memo_CheckBox_Display.Checked = False
-        Me.U_Memo_CheckBox_Display.Design_Appli_Path = Nothing
-        Me.U_Memo_CheckBox_Display.Design_Current_Mode = Nothing
-        Me.U_Memo_CheckBox_Display.Design_First_Init_Design = Nothing
-        Me.U_Memo_CheckBox_Display.Design_Ident_Date = Nothing
-        Me.U_Memo_CheckBox_Display.Design_Ident_Double = Nothing
-        Me.U_Memo_CheckBox_Display.Design_Me_Name = Nothing
-        Me.U_Memo_CheckBox_Display.Design_Parent_Name = Nothing
-        Me.U_Memo_CheckBox_Display.Font = New System.Drawing.Font("Arial Narrow", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.U_Memo_CheckBox_Display.Location = New System.Drawing.Point(134, 65)
-        Me.U_Memo_CheckBox_Display.Mirrored_Control = Nothing
-        Me.U_Memo_CheckBox_Display.Mirrored_Control_Exits = False
-        Me.U_Memo_CheckBox_Display.Mode_Memo = True
-        Me.U_Memo_CheckBox_Display.Mode_Mirror = False
-        Me.U_Memo_CheckBox_Display.Name = "U_Memo_CheckBox_Display"
-        Me.U_Memo_CheckBox_Display.Original_Control = Nothing
-        Me.U_Memo_CheckBox_Display.Parent_Name = Nothing
-        Me.U_Memo_CheckBox_Display.Parent_Parent_Name = Nothing
-        Me.U_Memo_CheckBox_Display.Size = New System.Drawing.Size(151, 25)
-        Me.U_Memo_CheckBox_Display.TabIndex = 112
-        Me.U_Memo_CheckBox_Display.Text_Memo_Check = "Display Text"
-        Me.U_Memo_CheckBox_Display.UControl_Text_Font = New System.Drawing.Font("Comic Sans MS", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.U_Memo_CheckBox_Display.UCtl_Text_BackColor = System.Drawing.Color.PapayaWhip
-        Me.U_Memo_CheckBox_Display.UCtl_Text_Color = System.Drawing.SystemColors.ControlText
         '
         'lblTestReadJson
         '
@@ -417,7 +383,7 @@ Partial Class U5_JSON_Read_Write
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1196, 571)
+        Me.TabPage3.Size = New System.Drawing.Size(1442, 873)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Architecture and Documentation of [Save + Restore JSON]"
         '
@@ -450,7 +416,7 @@ Partial Class U5_JSON_Read_Write
         Me.TabPage4.Controls.Add(Me.PictureBox1)
         Me.TabPage4.Location = New System.Drawing.Point(4, 25)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1196, 571)
+        Me.TabPage4.Size = New System.Drawing.Size(1442, 873)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Organigrammes des fonctions"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -475,6 +441,16 @@ Partial Class U5_JSON_Read_Write
         Me.Label1.Size = New System.Drawing.Size(307, 18)
         Me.Label1.TabIndex = 102
         Me.Label1.Text = "Save + Restore Data to JSON (mars 2024)"
+        '
+        'lblConvert
+        '
+        Me.lblConvert.AutoSize = True
+        Me.lblConvert.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblConvert.Location = New System.Drawing.Point(7, 85)
+        Me.lblConvert.Name = "lblConvert"
+        Me.lblConvert.Size = New System.Drawing.Size(110, 16)
+        Me.lblConvert.TabIndex = 19
+        Me.lblConvert.Text = "Click to convert!"
         '
         'U_Memo_Directory_Browser1
         '
@@ -512,6 +488,55 @@ Partial Class U5_JSON_Read_Write
         Me.U_Memo_Text_With_Browser1.Size = New System.Drawing.Size(604, 27)
         Me.U_Memo_Text_With_Browser1.TabIndex = 2
         '
+        'U_Memo_Txt_Value_Variable1
+        '
+        Me.U_Memo_Txt_Value_Variable1.A_Memo_Text_First_Init = "95"
+        Me.U_Memo_Txt_Value_Variable1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.U_Memo_Txt_Value_Variable1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.U_Memo_Txt_Value_Variable1.Location = New System.Drawing.Point(327, 30)
+        Me.U_Memo_Txt_Value_Variable1.Margin = New System.Windows.Forms.Padding(0)
+        Me.U_Memo_Txt_Value_Variable1.Memo1_Text = "117"
+        Me.U_Memo_Txt_Value_Variable1.Mirrored_Control = Nothing
+        Me.U_Memo_Txt_Value_Variable1.Mirrored_Control_Exits = False
+        Me.U_Memo_Txt_Value_Variable1.Mode_Memo = True
+        Me.U_Memo_Txt_Value_Variable1.Mode_Mirror = False
+        Me.U_Memo_Txt_Value_Variable1.Name = "U_Memo_Txt_Value_Variable1"
+        Me.U_Memo_Txt_Value_Variable1.Original_Control = Nothing
+        Me.U_Memo_Txt_Value_Variable1.Size = New System.Drawing.Size(105, 20)
+        Me.U_Memo_Txt_Value_Variable1.TabIndex = 3
+        Me.U_Memo_Txt_Value_Variable1.UControl_Border_Size = 0
+        Me.U_Memo_Txt_Value_Variable1.UControl_Text_Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.U_Memo_Txt_Value_Variable1.UCtl_Text_BackColor = System.Drawing.SystemColors.Window
+        Me.U_Memo_Txt_Value_Variable1.UCtl_Text_Color = System.Drawing.SystemColors.WindowText
+        '
+        'U_Memo_CheckBox_Display
+        '
+        Me.U_Memo_CheckBox_Display.BackColor = System.Drawing.Color.Gainsboro
+        Me.U_Memo_CheckBox_Display.Checked = False
+        Me.U_Memo_CheckBox_Display.Design_Appli_Path = Nothing
+        Me.U_Memo_CheckBox_Display.Design_Current_Mode = Nothing
+        Me.U_Memo_CheckBox_Display.Design_First_Init_Design = Nothing
+        Me.U_Memo_CheckBox_Display.Design_Ident_Date = Nothing
+        Me.U_Memo_CheckBox_Display.Design_Ident_Double = Nothing
+        Me.U_Memo_CheckBox_Display.Design_Me_Name = Nothing
+        Me.U_Memo_CheckBox_Display.Design_Parent_Name = Nothing
+        Me.U_Memo_CheckBox_Display.Font = New System.Drawing.Font("Arial Narrow", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.U_Memo_CheckBox_Display.Location = New System.Drawing.Point(134, 65)
+        Me.U_Memo_CheckBox_Display.Mirrored_Control = Nothing
+        Me.U_Memo_CheckBox_Display.Mirrored_Control_Exits = False
+        Me.U_Memo_CheckBox_Display.Mode_Memo = True
+        Me.U_Memo_CheckBox_Display.Mode_Mirror = False
+        Me.U_Memo_CheckBox_Display.Name = "U_Memo_CheckBox_Display"
+        Me.U_Memo_CheckBox_Display.Original_Control = Nothing
+        Me.U_Memo_CheckBox_Display.Parent_Name = Nothing
+        Me.U_Memo_CheckBox_Display.Parent_Parent_Name = Nothing
+        Me.U_Memo_CheckBox_Display.Size = New System.Drawing.Size(151, 25)
+        Me.U_Memo_CheckBox_Display.TabIndex = 112
+        Me.U_Memo_CheckBox_Display.Text_Memo_Check = "Display Text"
+        Me.U_Memo_CheckBox_Display.UControl_Text_Font = New System.Drawing.Font("Comic Sans MS", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.U_Memo_CheckBox_Display.UCtl_Text_BackColor = System.Drawing.Color.PapayaWhip
+        Me.U_Memo_CheckBox_Display.UCtl_Text_Color = System.Drawing.SystemColors.ControlText
+        '
         'U_Msg_Local1
         '
         Me.U_Msg_Local1.AutoSize = True
@@ -538,7 +563,7 @@ Partial Class U5_JSON_Read_Write
         Me.Controls.Add(Me.U_Msg_Local1)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "U5_JSON_Read_Write"
-        Me.Size = New System.Drawing.Size(1240, 695)
+        Me.Size = New System.Drawing.Size(1450, 900)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
@@ -572,8 +597,6 @@ Partial Class U5_JSON_Read_Write
 	Friend WithEvents RichTextBox2 As RichTextBox
 	Friend WithEvents Button_Create_JSON_From_Collection As Button
     Friend WithEvents U_Memo_Directory_Browser1 As Common_All_2013_a.U_Memo_Directory_Browser
-    Friend WithEvents txtConvertedVariable As TextBox
-	Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents RichTextBox_Structure As RichTextBox
     Friend WithEvents btnConvertJasonToStructure As Button
@@ -592,4 +615,8 @@ Partial Class U5_JSON_Read_Write
     Friend WithEvents RichTextBox_Compare_Read_Write As RichTextBox
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents lblConvert As Label
 End Class

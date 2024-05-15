@@ -69,25 +69,25 @@ Public Class U5_JSON_Read_Write
         Dim Compteur_Test_Json As Integer
         Compteur_Test_Json = Integer.Parse(U_Memo_Txt_Value_Variable1.Memo1_Text)
         Dim String_Json_From_Variable As String
-        Dim Format_Options_For_Json As Newtonsoft.Json.Formatting
         String_Json_From_Variable = Newtonsoft.Json.JsonConvert.SerializeObject(Compteur_Test_Json, Newtonsoft.Json.Formatting.Indented)
         TextBox1.Text = String_Json_From_Variable
         TextBox1.BackColor = Color.YellowGreen
+        TextBox2.BackColor = Color.YellowGreen
         Dim Converted_text As String = Newtonsoft.Json.JsonConvert.DeserializeObject(Of String)(String_Json_From_Variable)
-        txtConvertedVariable.Text = Converted_text
 
         Dim Table_Text_String As String()
         ReDim Table_Text_String(5)
         Table_Text_String(1) = "Première_Chaine"
         Table_Text_String(2) = "Chaine 2"
         Table_Text_String(3) = "Chaine 3"
+        RichTextBox_Structure.Lines = Table_Text_String
         TextBox2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(Table_Text_String, Newtonsoft.Json.Formatting.Indented)
         Dim Converted_table As String()
         ReDim Converted_table(5)
         Converted_table = Newtonsoft.Json.JsonConvert.DeserializeObject(Of String())(TextBox2.Text)
         'RichTextBox_Structure.Text = Converted_table(1) & Converted_table(2) & Converted_table(3) & Converted_table(4) & Converted_table(5)
-        RichTextBox_Structure.Lines = Converted_table
-
+        'RichTextBox_Structure.Lines = Converted_table
+        lblConvert.Text = "Converted with success!"
 
         Exit Sub
         '-------------------------------------------------------------------------------
@@ -144,7 +144,6 @@ Errhandler_Avec_Diagnostic:
         Store_S_Equivalent.Collect_of_States.Table_Of_State_Info(1).Table_Of_Events_Linked_To_This_State.Table_Of_Event_Info(1) = Store_S_Equivalent.Collect_of_Events.Table_Of_Event_Info(1)
 
         Dim String_Json_From_Variable As String
-        Dim Format_Options_For_Json As Newtonsoft.Json.Formatting
         String_Json_From_Variable = Newtonsoft.Json.JsonConvert.SerializeObject(Store_S_Equivalent, Newtonsoft.Json.Formatting.Indented)
         RichTextBox2.Text = String_Json_From_Variable
         RichTextBox2.BackColor = Color.YellowGreen
@@ -196,7 +195,7 @@ Errhandler_Avec_Diagnostic:
         RichTextBoxConvertJasonStructure.Text = RichTextBoxConvertJasonStructure.Text & " " & Store_S_Equivalent_Read_test.Collect_of_Events.Table_Of_Event_Info(1).Event_Name
         RichTextBoxConvertJasonStructure.Text = RichTextBoxConvertJasonStructure.Text & " " & Store_S_Equivalent_Read_test.Collect_of_Events.Table_Of_Event_Info(2).Event_Name
         'RichTextBoxConvertJasonStructure.Text = JsonConvert.SerializeObject(Store_S_Equivalent_READ, Newtonsoft.Json.Formatting.Indented)
-
+        RichTextBoxConvertJasonStructure.BackColor = Color.YellowGreen
 
         Exit Sub
         '-------------------------------------------------------------------------------
@@ -253,14 +252,13 @@ Errhandler_Avec_Diagnostic:
         Store_S_Equivalent_Write.Collect_of_Events.Table_Of_Event_Info(1).Event_Name = "Event n° 1"
         Store_S_Equivalent_Write.Collect_of_Events.Table_Of_Event_Info(2).Event_Name = "Event n° 2"
 
-        '----------- Conversion en format Json String ''''''''''''''''''''''''''''''''''''''''''''''''''
+        '----------- Conversion en format Json String --------------------------------------------------
 
         Converted_text = Newtonsoft.Json.JsonConvert.SerializeObject(Store_S_Equivalent_Write, Newtonsoft.Json.Formatting.Indented)
 
-        '----------- On procède à l'écriture dans un fichier que l'on choisit dans Browser text ''''''''
+        '----------- On procède à l'écriture dans un fichier que l'on choisit dans Browser text --------
 
-        Dim Directory_From_Memo_Browser As String
-        Directory_From_Memo_Browser = U_Memo_Directory_Browser1.UC1_Label_AutoEllipses_b1.Text
+        Dim Directory_From_Memo_Browser As String = U_Memo_Directory_Browser1.UC1_Label_AutoEllipses_b1.Text
 
         If My.Computer.FileSystem.FileExists(Directory_From_Memo_Browser) = True Then
             If My.Computer.FileSystem.ReadAllText(Directory_From_Memo_Browser).Length = 0 Then
@@ -273,7 +271,7 @@ Errhandler_Avec_Diagnostic:
         Else
             System.IO.File.AppendAllText(Directory_From_Memo_Browser, Converted_text)
         End If
-        '----------- Si on la check box est activé on affiche dans le tableau ce qui a été écrit '''''''
+        '----------- Si on la check box est activé on affiche dans le tableau ce qui a été écrit -------
 
 
 
@@ -359,13 +357,6 @@ Errhandler_Avec_Diagnostic:
             btnReadJsonFile.BackColor = Color.Green
             lblTestReadJson.Text = "Lecture done"
 
-
-
-            'If RichTextBoxConvertJasonStructure.Text = RichTextBoxRead_Display.Text Then
-            '    U_Msg_Local1.Aff_Coul_RGB(U_Msg_Local.Type_Warning.Aff_INFO_GRAS, Color.RosyBrown, "Pareil")
-            'Else
-            '    U_Msg_Local1.Aff_Coul_RGB(U_Msg_Local.Type_Warning.Aff_INFO_GRAS, Color.RosyBrown, "Pas équivalent")
-            'End If
         Else
             btnReadJsonFile.BackColor = Color.Red
             lblTestReadJson.Text = "File doesn't exist"
@@ -513,5 +504,12 @@ Errhandler_Avec_Diagnostic:
         '------------         Fin traitement des erreurs                   -------------
     End Sub
 
-
+    Private Sub U5_JSON_Read_Write_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim Table_Text_String As String()
+        ReDim Table_Text_String(5)
+        Table_Text_String(1) = "Première_Chaine"
+        Table_Text_String(2) = "Chaine 2"
+        Table_Text_String(3) = "Chaine 3"
+        RichTextBox_Structure.Lines = Table_Text_String
+    End Sub
 End Class
