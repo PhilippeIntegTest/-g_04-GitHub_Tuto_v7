@@ -7,8 +7,184 @@ Public Class U5_PlantUML_MindMap_v1
     Public Global_Flag_Jar_File_Is_OK As Boolean = False
 
 
-    Private Sub Button_Load_State_Machine_Exemple_2_States_Click(sender As Object, e As EventArgs) Handles Button_Load_State_Machine_Exemple_2_States.Click
 
+
+    '**********************************************************************************
+    '****   Definition of STATE Structure                                        ******
+    '****                                                                        ******
+    '**** Note1: the Class SortedList store info with a  (1) Key and a (2) type  ******
+    '****       ==> Usefull to store States, Transitions, Indexes ...            ******
+    '****                                                                        ******
+    '**** Note2: Better than "Collection" in VB because there is a check of type ****** 
+    '****        (but "Collection" is more powerfull !)                          ****** 
+    '**********************************************************************************
+    Public Structure Store_State_Info
+        Dim Unique_State_Name As String
+        Dim State_Code_for_DFB As Integer    '**** This is the number used in the specification (Open PLC Safety)
+        Dim Type_of_State As Type_of_State
+        Dim Table_Of_Transitions_Linked_to_this_State As System.Collections.Generic.SortedList(Of String, Store_Index_On_Transition_And_Next_State)  '#####  Attention: c'est du type:  Store_Index_On_Transition_And_Next_State   ##########
+        Dim Current_Depth_Level As Type_Depth_Level
+        Dim Parent_State_Machine_Index As Store_Index_On_State  '**** in case this machine is included in a composite state
+        Dim Color_of_State_in_PlantUML As System.Drawing.Color
+    End Structure
+
+
+    '*********************************************************************************
+    '****   Definition of Transition Structure                                 *******
+    '*********************************************************************************
+    Public Structure Store_Transition_Info
+        Dim Unique_Transition_Name As String
+        Dim Transition_Name_Short_Version As String
+        '***** Table to be used for All test case generation    ******************
+        Dim Table_of_States_Using_this_Transition As System.Collections.Generic.SortedList(Of String, Store_Index_On_State)
+    End Structure
+
+
+    '*********************************************************************************
+    '****   Definition of Depth Level                           [PCh, 2024-07-25] ****
+    '****                                                                         ****
+    '**** Note1: Level_1 is Upper Level =1   (Should be a "Region" ?)             ****
+    '**** Note2: Level_4 , 5, 6 have no Const definition but can be used          ****
+    '****           --> Use directly the number                                   ****
+    '*********************************************************************************
+    Public Enum Type_Depth_Level
+        Upper_Level_1 = 1
+        Level_2 = 2
+        Level_3 = 3
+        Level_4 = 4
+    End Enum
+
+    '*********************************************************************************
+    '****   Definition of Trasition Priority                    [PCh, 2024-07-25] ****
+    '****                                                                         ****
+    '**** Note1: Level_1 is priority max                                          ****
+    '**** Note2: Level_4 , 5, 6 have no Const definition but can be used          ****
+    '****           --> Use directly the number                                   ****
+    '*********************************************************************************
+    Public Enum Type_Transition_Priority
+        Level_1 = 1
+        Level_2 = 2
+        Level_3 = 3
+        Level_4 = 4
+        Level_5 = 5
+        Level_6 = 6
+    End Enum
+
+    '*********************************************************************************
+    '****   Definition of State_Type (Start, End,...)           [PCh, 2024-07-25] ****
+    '****                                                                         ****
+    '**** Note1: Normal State is a state without embedded states                  ****
+    '****                                                                         ****
+    '*********************************************************************************
+    Public Enum Type_of_State
+        Start_State = 1  '*******   This is the starting point
+        End_State = 2
+        Composite_State = 3
+        Normal_State = 4
+    End Enum
+
+
+    '*********************************************************************************
+    '****   Definition of Link Index on States                  [PCh, 2024-07-25] ****
+    '****                                                                         ****
+    '**** Note1: Used to store a link to a state (Cf "Pointer")                   ****
+    '**** Note2: 2 information are strored and wiil be Checked for Consistency    ****
+    '****        of the stored structure                                          ****
+    '*********************************************************************************
+    Public Structure Store_Index_On_State
+        Dim Unique_State_Name As String
+        Dim State_Index_In_Table As Integer
+    End Structure
+
+
+    '*********************************************************************************
+    '****   Definition of Link Index on Transitions             [PCh, 2024-07-25] ****
+    '****                                                                         ****
+    '**** Note1: Used to store a link to a state (Cf "Pointer")                   ****
+    '**** Note2: 2 information are strored and wiil be Checked for Consistency    ****
+    '****        of the stored structure                                          ****
+    '*********************************************************************************
+    Public Structure Store_Index_On_Transition_And_Next_State
+        Dim Unique_Transition_Name As String
+        Dim Transition_Index_In_Table As Integer
+        Dim Next_State_for_this_Transition As Store_Index_On_State
+        Dim Priority_of_this_Transition As Type_Transition_Priority
+    End Structure
+
+    '*********************************************************************************
+    '****   Definition of Link to States by depth               [PCh, 2024-07-25] ****
+    '****                                                                         ****
+    '**** Note1: Used to store a link to a state (Cf "Pointer")                   ****
+    '**** Note2: 2 information are strored and wiil be Checked for Consistency    ****
+    '****        of the stored structure                                          ****
+    '****                                                                         ****
+    '**** Note3: Mettre dans une Classe pour éviter de faire un Init()            ****
+    '****           à chaque niveau de profondeur !!!!!                           ****
+    '*********************************************************************************
+    Public Structure Store_Index_On_State_Plus_Depth
+        Dim Unique_State_Name As String
+        Dim State_Index_In_Table As Integer
+        Dim Current_Level_Of_Depth As Type_Depth_Level   '******* At each level there is a collection of states !
+        Dim Tree_Structure_Next_Depth_Level As System.Collections.Generic.SortedList(Of String, Store_Index_On_State_Plus_Depth)  '********* Ré-entrant: l'idée c'est de stocker un TreeView (Arborescent)
+        '********* Note: pas vraiment besoin de mettre le nom du state en index !
+    End Structure
+
+
+
+    '*********************************************************************************
+    '****   Definition State Machine Structure                  [PCh, 2024-07-25] ****
+    '****                                                                         ****
+    '**** Note1: Full structure of the State machine                              ****
+    '**** Note2: 2 information are strored and wiil be Checked for Consistency    ****
+    '****        of the stored structure                                          ****
+    '*********************************************************************************
+    Public Structure Store_Info_On_State_Machine
+        Dim Unique_State_Machine_Name As String
+        Dim Coll_of_States As System.Collections.Generic.SortedList(Of String, Store_State_Info)                                          '*********  Type = Store_State_Info  
+        Dim Coll_of_Transitions As System.Collections.Generic.SortedList(Of String, Store_Transition_Info)                                '*********  Type = Store_Transition_Info
+        Dim Root_Tree_Structure_Of_Machine_By_Depth As System.Collections.Generic.SortedList(Of String, Store_Index_On_State_Plus_Depth)  '*********  Type = Store_Index_On_State_Plus_Depth
+    End Structure
+
+    '######################################################################################################################################
+    '#####   Note: (#ToDo) Passer cette structure en Classe et faire les Init des collections sur le New() ou l'Init_Collections()  #######
+    '######################################################################################################################################
+
+
+    '------     Static definition For State Machine Structure                  -------
+
+    Public Info_Full_State_Mach_S_EQU_v1 As Store_Info_On_State_Machine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Private Sub Button_Load_State_Machine_Exemple_2_States_Click(sender As Object, e As EventArgs) Handles Button_Load_State_Machine_Exemple_2_States.Click
+        On Error GoTo Errhandler_Avec_Diagnostic
+        '------------------------------------------------------------------------------------
+        '-----  Button to Check Path for Exe file                                         ---
+        '------------------------------------------------------------------------------------
+        Button6.BackColor = Color.Gold
+        Check_Path_for_Exe_File()
+
+        Exit Sub
+        '-------------------------------------------------------------------------------
+        '------------             Traitement des erreurs                      ----------
+        '-------------------------------------------------------------------------------
+Errhandler_Avec_Diagnostic:
+        Call U_Msg_Local1.Affiche_Erreur("Error Launcher: Read_Exe_File_Path() ")
+        Resume Next
+        '------------         Fin traitement des erreurs                   -------------
 
     End Sub
 
@@ -182,7 +358,119 @@ Errhandler_Avec_Diagnostic:
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button_Create_Composite_State_Machine_Click(sender As Object, e As EventArgs) Handles Button_Create_Composite_State_Machine.Click
+        On Error GoTo Errhandler_Avec_Diagnostic
+        '------------------------------------------------------------------------------------
+        '-----  Button to Check Path for Exe file                                         ---
+        '------------------------------------------------------------------------------------
+        Button_Create_Composite_State_Machine.BackColor = Color.Gold
+        Create_Struct_For_Composite_State_Machine_Simple_S_EQUIVALENT()
+
+        Exit Sub
+        '-------------------------------------------------------------------------------
+        '------------             Traitement des erreurs                      ----------
+        '-------------------------------------------------------------------------------
+Errhandler_Avec_Diagnostic:
+        Call U_Msg_Local1.Affiche_Erreur("Error Launcher: Button_Create_Composite_State_Machine() ")
+        Resume Next
+        '------------         Fin traitement des erreurs                   -------------
+
+
+
+
 
     End Sub
+
+    Private Sub Create_Struct_For_Composite_State_Machine_Simple_S_EQUIVALENT()
+
+        On Error GoTo Errhandler_Avec_Diagnostic
+        '************************************************************************************
+        '****  Init Structure                                                      **********
+        '************************************************************************************
+        Init_All_Collections_in_Class_or_Struct_Store_Info_On_State_Machine(Info_Full_State_Mach_S_EQU_v1)
+        '------------------------------------------------------------------------------------
+        '-----  Structure with 3 levels                                                   ---
+        '------------------------------------------------------------------------------------
+        Info_Full_State_Mach_S_EQU_v1.Unique_State_Machine_Name = "Premier Essai Simple State_Mach"
+
+        '------------------------------------------------------------------------------------
+        '-----  Remplissage 1er état                                                      ---
+        '------------------------------------------------------------------------------------
+        Dim St_Store_State_Info As New Store_State_Info  '#####  pourquoi un new avec cette structure ?   #######
+
+        St_Store_State_Info.Unique_State_Name = "Full Composite Example S_EQUIVALENT"
+        St_Store_State_Info.Type_of_State = Type_of_State.Composite_State
+        ' Dim Table_Of_Transitions_Linked_to_this_State As Microsoft.VisualBasic.Collection  '#####  Attention: c'est du type:  Store_Index_On_Transition_And_Next_State   ##########
+        St_Store_State_Info.Current_Depth_Level = Type_Depth_Level.Upper_Level_1
+        St_Store_State_Info.Parent_State_Machine_Index = Nothing    '**** in case this machine is included in a composite state
+        St_Store_State_Info.Color_of_State_in_PlantUML = Color.White
+
+        '------------------------------------------------------------------------------------
+        '-----  Ajout de l'etat dans la collection                                        ---
+        '------------------------------------------------------------------------------------
+        Info_Full_State_Mach_S_EQU_v1.Coll_of_States.Add(St_Store_State_Info.Unique_State_Name, St_Store_State_Info)
+
+
+        Dim St_Store_State_Info_Test As New Store_State_Info  '#####  pourquoi un new avec cette structure ?   #######
+
+        Dim Test_Liste As List(Of Integer)
+
+        '*****  Déclaration de la variable  (First: Key, next Type of value)               *****************
+        Dim Test_Sorted_List_Of_States As System.Collections.Generic.SortedList(Of String, Store_State_Info)
+
+        '*****  Initialisation                     *********************************************************
+        Test_Sorted_List_Of_States = New System.Collections.Generic.SortedList(Of String, Store_State_Info)
+        Test_Sorted_List_Of_States.Add(St_Store_State_Info.Unique_State_Name, St_Store_State_Info)
+        St_Store_State_Info_Test = Test_Sorted_List_Of_States.Item("Full Composite Example S_EQUIVALENT")
+
+
+
+        ''====== Très dommage de devoir caster !!!!    ================================================================
+        'St_Store_State_Info_Test = CType(Info_Full_State_Mach_S_EQU_v1.Coll_of_States.Item("Full Composite Example S_EQUIVALENT"), Store_State_Info)
+
+        Dim Name_State As String
+        Name_State = St_Store_State_Info_Test.Unique_State_Name
+
+
+
+
+
+        Exit Sub
+        '-------------------------------------------------------------------------------
+        '------------             Traitement des erreurs                      ----------
+        '-------------------------------------------------------------------------------
+Errhandler_Avec_Diagnostic:
+        Call U_Msg_Local1.Affiche_Erreur("Error Launcher: Create_Struct_For_Composite_State_Machine() ")
+        Resume Next
+        '------------         Fin traitement des erreurs                   -------------
+    End Sub
+
+
+    Private Sub Init_All_Collections_in_Class_or_Struct_Store_Info_On_State_Machine(ByRef Structure_Info_On_State_Machine As Store_Info_On_State_Machine)
+        On Error GoTo Errhandler_Avec_Diagnostic
+        '------------------------------------------------------------------------------------
+        '-----  Note: (ToDo) à mettre dans le pseudo New() de la classe                   ---
+        '------------------------------------------------------------------------------------
+        Structure_Info_On_State_Machine.Unique_State_Machine_Name = " "
+
+        Structure_Info_On_State_Machine.Coll_of_States = New System.Collections.Generic.SortedList(Of String, Store_State_Info)
+        Structure_Info_On_State_Machine.Coll_of_Transitions = New System.Collections.Generic.SortedList(Of String, Store_Transition_Info)
+
+        '------------------------------------------------------------------------------------
+        '-----  TreeView: ça sera fait lors de la création ! (Par programme)              ---
+        '------------------------------------------------------------------------------------
+        Exit Sub
+        '-------------------------------------------------------------------------------
+        '------------             Traitement des erreurs                      ----------
+        '-------------------------------------------------------------------------------
+Errhandler_Avec_Diagnostic:
+        Call U_Msg_Local1.Affiche_Erreur("Error Launcher: Init_All_Collections_in_Class_or_Struct_Store_Info_On_State_Machine() ")
+        Resume Next
+        '------------         Fin traitement des erreurs                   -------------
+    End Sub
+
+
+
+
+
 End Class

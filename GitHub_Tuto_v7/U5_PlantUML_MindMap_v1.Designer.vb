@@ -58,23 +58,23 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.Button6 = New System.Windows.Forms.Button()
 		Me.Button5 = New System.Windows.Forms.Button()
 		Me.TabPage2 = New System.Windows.Forms.TabPage()
+		Me.TabPage5 = New System.Windows.Forms.TabPage()
+		Me.Label14 = New System.Windows.Forms.Label()
+		Me.Button_Create_Composite_State_Machine = New System.Windows.Forms.Button()
+		Me.Label13 = New System.Windows.Forms.Label()
 		Me.TabPage3 = New System.Windows.Forms.TabPage()
 		Me.Label12 = New System.Windows.Forms.Label()
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.Label7 = New System.Windows.Forms.Label()
 		Me.U_Msg_Local1 = New Common_All_2013_a.U_Msg_Local()
-		Me.TabPage5 = New System.Windows.Forms.TabPage()
-		Me.Label13 = New System.Windows.Forms.Label()
-		Me.Button1 = New System.Windows.Forms.Button()
-		Me.Label14 = New System.Windows.Forms.Label()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
 		CType(Me.PictureBox_UML_Result, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.GroupBox1.SuspendLayout()
 		Me.TableLayoutPanel1.SuspendLayout()
 		Me.TabPage4.SuspendLayout()
-		Me.TabPage3.SuspendLayout()
 		Me.TabPage5.SuspendLayout()
+		Me.TabPage3.SuspendLayout()
 		Me.SuspendLayout()
 		'
 		'Label1
@@ -555,6 +555,58 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.TabPage2.TabIndex = 1
 		Me.TabPage2.Text = "Show PLANTUML Graph"
 		'
+		'TabPage5
+		'
+		Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(181, Byte), Integer))
+		Me.TabPage5.Controls.Add(Me.Label14)
+		Me.TabPage5.Controls.Add(Me.Button_Create_Composite_State_Machine)
+		Me.TabPage5.Controls.Add(Me.Label13)
+		Me.TabPage5.Location = New System.Drawing.Point(4, 25)
+		Me.TabPage5.Name = "TabPage5"
+		Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
+		Me.TabPage5.Size = New System.Drawing.Size(1096, 750)
+		Me.TabPage5.TabIndex = 4
+		Me.TabPage5.Text = "Parse Composite State_Machine (UML)"
+		'
+		'Label14
+		'
+		Me.Label14.AutoSize = True
+		Me.Label14.BackColor = System.Drawing.Color.Navy
+		Me.Label14.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label14.ForeColor = System.Drawing.Color.Yellow
+		Me.Label14.Location = New System.Drawing.Point(24, 38)
+		Me.Label14.Name = "Label14"
+		Me.Label14.Size = New System.Drawing.Size(258, 80)
+		Me.Label14.TabIndex = 14
+		Me.Label14.Text = "    Simple Composite (3 levels) State Machine" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "     " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "¤ Level1:  Container" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "¤ Lev" &
+	"el2:  2 machines" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "¤ Level3:  Base logic with 3 states"
+		'
+		'Button_Create_Composite_State_Machine
+		'
+		Me.Button_Create_Composite_State_Machine.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+		Me.Button_Create_Composite_State_Machine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button_Create_Composite_State_Machine.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button_Create_Composite_State_Machine.Location = New System.Drawing.Point(27, 121)
+		Me.Button_Create_Composite_State_Machine.Name = "Button_Create_Composite_State_Machine"
+		Me.Button_Create_Composite_State_Machine.Size = New System.Drawing.Size(281, 22)
+		Me.Button_Create_Composite_State_Machine.TabIndex = 8
+		Me.Button_Create_Composite_State_Machine.Text = "[Step 1_a] Load Composite State_Machine"
+		Me.Button_Create_Composite_State_Machine.UseVisualStyleBackColor = False
+		'
+		'Label13
+		'
+		Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+		Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label13.ForeColor = System.Drawing.Color.Maroon
+		Me.Label13.Location = New System.Drawing.Point(182, 3)
+		Me.Label13.Name = "Label13"
+		Me.Label13.Size = New System.Drawing.Size(477, 24)
+		Me.Label13.TabIndex = 6
+		Me.Label13.Text = "Composite State-Machine Parser (UML) [Juillet 2024]"
+		Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		Me.Label13.UseCompatibleTextRendering = True
+		'
 		'TabPage3
 		'
 		Me.TabPage3.AutoScroll = True
@@ -614,58 +666,6 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.U_Msg_Local1.Size = New System.Drawing.Size(75, 18)
 		Me.U_Msg_Local1.TabIndex = 6
 		'
-		'TabPage5
-		'
-		Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(181, Byte), Integer))
-		Me.TabPage5.Controls.Add(Me.Label14)
-		Me.TabPage5.Controls.Add(Me.Button1)
-		Me.TabPage5.Controls.Add(Me.Label13)
-		Me.TabPage5.Location = New System.Drawing.Point(4, 25)
-		Me.TabPage5.Name = "TabPage5"
-		Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-		Me.TabPage5.Size = New System.Drawing.Size(1096, 750)
-		Me.TabPage5.TabIndex = 4
-		Me.TabPage5.Text = "Parse Composite State_Machine (UML)"
-		'
-		'Label13
-		'
-		Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-		Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-		Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Label13.ForeColor = System.Drawing.Color.Maroon
-		Me.Label13.Location = New System.Drawing.Point(182, 3)
-		Me.Label13.Name = "Label13"
-		Me.Label13.Size = New System.Drawing.Size(477, 24)
-		Me.Label13.TabIndex = 6
-		Me.Label13.Text = "Composite State-Machine Parser (UML) [Juillet 2024]"
-		Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-		Me.Label13.UseCompatibleTextRendering = True
-		'
-		'Button1
-		'
-		Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-		Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Button1.Location = New System.Drawing.Point(27, 121)
-		Me.Button1.Name = "Button1"
-		Me.Button1.Size = New System.Drawing.Size(281, 22)
-		Me.Button1.TabIndex = 8
-		Me.Button1.Text = "[Step 1_a] Load Composite State_Machine"
-		Me.Button1.UseVisualStyleBackColor = False
-		'
-		'Label14
-		'
-		Me.Label14.AutoSize = True
-		Me.Label14.BackColor = System.Drawing.Color.Navy
-		Me.Label14.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Label14.ForeColor = System.Drawing.Color.Yellow
-		Me.Label14.Location = New System.Drawing.Point(36, 38)
-		Me.Label14.Name = "Label14"
-		Me.Label14.Size = New System.Drawing.Size(258, 80)
-		Me.Label14.TabIndex = 14
-		Me.Label14.Text = "    Simple Composite (3 levels) State Machine" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "     " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "¤ Level1:  Container" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "¤ Lev" &
-	"el2:  2 machines" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "¤ Level3:  Base logic with 3 states"
-		'
 		'U5_PlantUML_MindMap_v1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -686,9 +686,9 @@ Partial Class U5_PlantUML_MindMap_v1
 		Me.TableLayoutPanel1.ResumeLayout(False)
 		Me.TabPage4.ResumeLayout(False)
 		Me.TabPage4.PerformLayout()
-		Me.TabPage3.ResumeLayout(False)
 		Me.TabPage5.ResumeLayout(False)
 		Me.TabPage5.PerformLayout()
+		Me.TabPage3.ResumeLayout(False)
 		Me.ResumeLayout(False)
 		Me.PerformLayout()
 
@@ -736,5 +736,5 @@ Partial Class U5_PlantUML_MindMap_v1
 	Friend WithEvents TabPage5 As TabPage
 	Friend WithEvents Label13 As Label
 	Friend WithEvents Label14 As Label
-	Friend WithEvents Button1 As Button
+	Friend WithEvents Button_Create_Composite_State_Machine As Button
 End Class
